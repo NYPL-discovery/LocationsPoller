@@ -1,0 +1,21 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: 'locations-poller'
+
+# More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
+Globals:
+  Function:
+    Timeout: 30
+
+Resources:
+  HoldingService:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      Handler: app.handle_event
+      Runtime: ruby2.7
+      Environment:
+        Variables:
+          LOG_LEVEL: debug
+          S3_BUCKET: 'locations-mapping'
+          S3_OBJECT: 'locations.json'
+          SIERRA_URL: 'https://catalog.nypl.org/screens/wwwoptions'
