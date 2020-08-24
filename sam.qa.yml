@@ -8,7 +8,7 @@ Globals:
     Timeout: 30
 
 Resources:
-  HoldingService:
+  LocationsPoller:
     Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
     Properties:
       Handler: app.handle_event
@@ -19,8 +19,8 @@ Resources:
           Properties:
             Schedule: 'rate(10 minutes)'
             Name: QASchedule
-            Description: qa schedule
-    Enabled: False
+            Description: 'qa schedule'
+            Enabled: True
       Environment:
         Variables:
           LOG_LEVEL: debug
