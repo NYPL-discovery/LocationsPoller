@@ -1,0 +1,29 @@
+language: ruby
+rvm: 2.7.0
+before_install:
+- gem install bundler
+- pip install awscli
+cache: bundler
+script:
+- bundle exec rspec -fd
+before_deploy:
+- rm -rf vendor
+- bundle install --without travis_test
+deploy:
+- provider: lambda
+  function_name: LocationsPoller-qa
+  description: Polls Sierra for locations codes -> url mappings and stores in s3
+  region: us-east-1
+  role: arn:aws:iam::946183545209:role/lambda-full-access
+  runtime: ruby2.7
+  module_name: app
+  handler_name: handle_event
+  skip_cleanup: true
+  access_key_id: "$AWS_ACCESS_KEY_ID_QA"
+  secret_access_key: "$AWS_SECRET_ACCESS_KEY_QA"
+  on:
+    branch: qa
+after_deploy:
+- aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID_QA
+- aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY_QA
+- source $TRAVIS_BRANCH.env; aws lambda update-function-configuration --function-name LocationsPoller-$TRAVIS_BRANCH --environment "$VARIABLES" --region us-east-1
