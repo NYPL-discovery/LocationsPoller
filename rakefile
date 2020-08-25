@@ -39,13 +39,16 @@ task :cron do
   require 'aws-sdk-lambda'
   require 'aws-sdk-cloudwatchevents'
   if ENV['AWS_ACCESS_KEY_ID_QA'] && ENV['AWS_SECRET_ACCESS_KEY_QA']
-      sh %( aws configure set aws_access_key_id #{ENV['AWS_ACCESS_KEY_ID_QA']} )
-      sh %( aws configure set aws_secret_access_key #{ENV['AWS_SECRET_ACCESS_KEY_QA']} )
+      configuration = {
+        region: 'us-east-1',
+        access_key_id: ENV['AWS_ACCESS_KEY_ID_QA'],
+        secret_access_key: ENV['AWS_SECRET_ACCESS_KEY_QA']
+      }
   end
-  p 'Cron using config: ', Aws.config[:credentials]
+  p 'Cron using config: ', configuration
   if Aws.config[:credentials] && !Aws.config[:credentials].empty?
-    events_client = Aws::CloudWatchEvents::Client.new(region: 'us-east-1')
-    lambda_client = Aws::Lambda::Client.new(region: 'us-east-1')
+    events_client = Aws::CloudWatchEvents::Client.new(configuration)
+    lambda_client = Aws::Lambda::Client.new(configuration)
     deploy = YAML.safe_load(File.read('.travis.yml'))["deploy"].first
     function_name = deploy["function_name"]
     environment = deploy["environment"]
