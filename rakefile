@@ -46,7 +46,7 @@ task :cron do
       }
   end
   p 'Cron using config: ', configuration
-  if Aws.config[:credentials] && !Aws.config[:credentials].empty?
+  if defined? configuration
     events_client = Aws::CloudWatchEvents::Client.new(configuration)
     lambda_client = Aws::Lambda::Client.new(configuration)
     deploy = YAML.safe_load(File.read('.travis.yml'))["deploy"].first
