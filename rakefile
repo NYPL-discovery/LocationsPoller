@@ -51,7 +51,7 @@ task :cron do
     lambda_client = Aws::Lambda::Client.new(configuration)
     deploy = YAML.safe_load(File.read('.travis.yml'))["deploy"].first
     function_name = deploy["function_name"]
-    environment = deploy["environment"]
+    environment = deploy["environment"].map {|string| string.split("=") }.to_h
     if rule_name = environment["RULE_NAME"] && schedule_expression = environment["SCHEDULE_EXPRESSION"]
       p 'rule_name: ', rule_name, 'schedule_expression: ', schedule_expression
       events_client.put_rule(name: rule_name, schedule_expression: schedule_expression)
