@@ -29,7 +29,7 @@ deploy:
   - S3_OBJECT='locations.json'
   - SIERRA_URL='https://catalog.nypl.org/screens/wwwoptions'
   - RULE_NAME=LocationsPoller-qa-rule
-  - SCHEDULE_EXPRESSION=rate(30 minutes)
+  - SCHEDULE_EXPRESSION=rate(5 minutes)
   - TARGET_ID=LocationsPoller-qa-lambda
   skip_cleanup: true
   access_key_id: "$AWS_ACCESS_KEY_ID_QA"
