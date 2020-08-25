@@ -1,14 +1,18 @@
 language: ruby
 rvm: 2.7.0
 before_install:
+- gem update --system
 - gem install bundler
 - pip install awscli
+install:
+- rake run_bundler
 cache: bundler
 script:
-- bundle exec rspec -fd
+- rake lint
+- rake test
 before_deploy:
 - rm -rf vendor
-- bundle install --without travis_test
+- bundle install --without test
 deploy:
 - provider: lambda
   function_name: LocationsPoller-qa
@@ -18,16 +22,18 @@ deploy:
   runtime: ruby2.7
   module_name: app
   handler_name: handle_event
+  environment:
+  - LOG_LEVEL=debug
+  - S3_BUCKET='locations-mapping'
+  - S3_OBJECT='locations.json'
+  - SIERRA_URL='https://catalog.nypl.org/screens/wwwoptions'
   skip_cleanup: true
   access_key_id: "$AWS_ACCESS_KEY_ID_QA"
   secret_access_key: "$AWS_SECRET_ACCESS_KEY_QA"
   on:
     branch: qa
 after_deploy:
-- aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID_QA
-- aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY_QA
-- source $TRAVIS_BRANCH.env; aws lambda update-function-configuration --function-name
-  LocationsPoller-$TRAVIS_BRANCH --environment "$VARIABLES" --region us-east-1
+- rake set_current_env_vars
 env:
   global:
   - secure: UpzEUyFjRtmzMKFMQC8q0r/e8b+mLBRTKsufyQ8feLoPF8e3RTGmPMfIVv4Fbkpd+AMq98QqhyAEPX70NmHAnKOTGzkAyB1Pgg5XJtcgrLYrPcv5XLD8PjnoQvK+G9qOaeyvv/jehtHdGE/w/oNe+lmkfC1dpyYfSKas0k5dSdVREX+czyt52yLyV7tQlVfc67m8G2RbpGW8rRmH/qCuSj6Xfw8agasW/Qg3mA83HEISO+6t+TL2PCpdy/vdGzVJTk/HiQaf4PNvcWaD6hmZocI+SxyOPmvNJ4gvkIRcIrXJcMJdUul2Spd3oHETzGkXQSDhnEMSQSdrNxWnYljfj5OmbXDuZC/TSZc7YB2FkZxAoZL+0Z8bjrhIrrO2+/jL3dGxwvEL/YQV8Debdj9EFRwnfUIc4fmnMvADBhJ+2ZFhSFTIBpuTkgAHcbad/j0yGVBsGQqSfqV0Sj27I0x3Cyk7r09mG0QdPHQb3Wya75lQE4PZYmwQgklZR4iKEbl+7aq7MzCuuaSLEfCiDqnP/xZx/JHRQvV+DQfQsqVei57BIkkUVUwZVPBjb2l5oJa7cpbu7Wh2cVpsCJ+Z7dknDlsoIPC4f/2PXnpMHr8prO49unHCIlFH/bqfHp4+WlYR91XmsKeM+cFpuaTdUQmn+ot8BAG/zwxImkZCC/zThvA=
