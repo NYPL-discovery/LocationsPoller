@@ -1,4 +1,6 @@
 require 'yaml'
+require 'aws-sdk-lambda'
+require 'aws-sdk-cloudwatchevents'
 # Basic utility commands to make working with SAM and AWS Lambda more friendly
 
 desc 'Run test suite'
@@ -32,6 +34,29 @@ task :set_current_env_vars do
         sh %( aws lambda update-function-configuration --function-name #{dep['function_name']} --environment "#{env_var_str}" --region us-east-1 )
         # rubocop:enable Layout/LineLength
     end
+end
+
+desc 'Add cron to lambda'
+task :cron do
+  p 'Cron using config: ', Aws.config[:credentials]
+  if Aws.config[:credentials] && !Aws.config[:credentials].empty?
+    events_client = Aws::CloudWatchEvents::Client.new(region: 'us-east-1')
+    lambda_client = Aws::Lambda::Client.new(region: 'us-east-1')
+    deploy = YAML.safe_load(File.read('.travis.yml'))["deploy"].first
+    function_name = deploy["function_name"]
+    environment = deploy["environment"]
+    if rule_name = environment["RULE_NAME"] && schedule_expression = environment["SCHEDULE_EXPRESSION"]
+      p 'rule_name: ', rule_name, 'schedule_expression: ', schedule_expression
+      events_client.put_rule(name: rule_name, schedule_expression: schedule_expression)
+    end
+    if function_name && target_id = environment["TARGET_ID"]
+      p 'getting lambda with function name', function_name
+      lambda_resp = lambda_client.get_function(function_name: function_name).configuration
+      role = lambda_resp.role
+      p 'putting targets ', 'rule: ', rule_name, 'target_id: ', target_id, "arn: ", role
+      events_client.put_targets(rule: rule_name, targets: [{id: target_id, arn: role}])
+    end
+  end
 end
 
 desc 'Lint the application with the local rubocop settings'
