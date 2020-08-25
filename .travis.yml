@@ -8,7 +8,6 @@ install:
 - rake run_bundler
 cache: bundler
 script:
-- rake lint
 - rake test
 before_deploy:
 - rm -rf vendor
