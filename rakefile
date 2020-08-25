@@ -1,6 +1,4 @@
 require 'yaml'
-require 'aws-sdk-lambda'
-require 'aws-sdk-cloudwatchevents'
 # Basic utility commands to make working with SAM and AWS Lambda more friendly
 
 desc 'Run test suite'
@@ -38,6 +36,8 @@ end
 
 desc 'Add cron to lambda'
 task :cron do
+  require 'aws-sdk-lambda'
+  require 'aws-sdk-cloudwatchevents'
   p 'Cron using config: ', Aws.config[:credentials]
   if Aws.config[:credentials] && !Aws.config[:credentials].empty?
     events_client = Aws::CloudWatchEvents::Client.new(region: 'us-east-1')
