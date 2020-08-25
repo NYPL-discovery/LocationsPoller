@@ -59,9 +59,9 @@ task :cron do
     if function_name && target_id = environment["TARGET_ID"]
       p 'getting lambda with function name', function_name
       lambda_resp = lambda_client.get_function(function_name: function_name).configuration
-      role = lambda_resp.role
-      p 'putting targets ', 'rule: ', rule_name, 'target_id: ', target_id, "arn: ", role
-      events_client.put_targets(rule: rule_name, targets: [{id: target_id, arn: role}])
+      arn = lambda_resp.function_arn
+      p 'putting targets ', 'rule: ', rule_name, 'target_id: ', target_id, "arn: ", arn
+      events_client.put_targets(rule: rule_name, targets: [{id: target_id, arn: arn}])
     end
   end
 end
