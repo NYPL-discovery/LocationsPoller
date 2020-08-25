@@ -1,0 +1,1570 @@
+#<!-- This File Last Changed: 15 November 2010 - H Miklitz -->*/
+
+#Directory:
+# General Display and Behavior
+# Staff
+# Scoping
+# General and Phrase Searching
+# Advanced Searching
+# Search Results
+# Record Displays
+# Electronic Resource Management
+# Holdings
+# My Lists
+# Saving and Exporting
+# Requesting
+# LAS Offsite Storage (GFA Requesting)
+# Patron Record
+# My Millennium
+# Patron Ratings
+# Ecommerce
+# Bookings
+# ILL
+# Media Management
+# Reserves
+# Featured Lists
+# Content Linking and Other Resources
+# WebBridge/Pathfinder Pro
+# Feeds
+# Z39.50
+# Partner
+# AirPAC
+# Patron Registration
+# My Federated Search (Research Pro or MetaFind)
+# WebPAC Pro
+# Research Pro
+# Program Registration
+# Web Access Management
+# Unfiled WWWOptions
+# Chinese Language Web Options
+# Russian Language Web Options
+# Spanish Language Web Options
+
+
+# General Display and Behavior
+AVAILLIM=<span class="availLimMessage">Limit search to available items</span>|<span class="availLimMessage">Search results limited to available items</span>
+AVAILLIM_STATS=-,o,k
+BOOKINGS=[limit]|[patron cancel]|[items]|[calendar]
+BOTLOGO=@screens/botlogo.html
+BUT_CANCEL=/screens/cancel.gif" border="0" class="button" alt="Cancel" title="Cancel
+BUT_CLOSEWINDOW=/screens/closewindow.gif" border="0" class="button" alt="Close window" title="Close window
+BUT_CLOSEWN=/screens/closewn.gif" border="0" class="button" alt="Close window" title="Close window
+BUT_RET2CAT=/screens/ret2cat.gif" border="0" class="button" alt="Return to the Catalog" title="Return to the Catalog
+# BUT_STARTOVER=/screens/startover.gif" border="0" class="button" alt="Start Over" title="Start Over
+BUT_SUBMIT=/screens/submit.gif" border="0" class="button" alt="Submit" title="Submit
+CUSTOM_MESSAGES=true
+FORM_FOCUS=true
+ICON_CANCEL=<img src="/screens/cancel.gif" alt="Cancel" class="button" title="Cancel" />
+ICON_CLEAR_FORM=<img src="/screens/clear_form.gif" alt="Clear Form" title="Clear Form" />
+ICON_OK=<img src="/screens/ok.gif" class="button" alt="OK" title="OK" />
+ICON_PREVPAGE=<img src="/screens/prevscrn.gif" class="button" alt="Previous" />
+ICON_SUBMIT=<img src="/screens/submit.gif" alt="Submit" class="button" title="Submit" />
+ICON_UPDATELIST=<img src="/screens/updatelist.gif" alt="Update List" class="button" title="Update List" />
+ICON_CLEAR_ALL=<img src="/screens/clear_all.gif" alt="Clear all checkmarks" title="Clear all checkmarks" />
+ICON_DELETE_SELECTED=<img src="/screens/delete_selected.gif" alt="Delete Selected Records" title="Delete Selected Records" />
+# ICON_SELECT_ALL=<img src="/screens/save_all.gif" alt="Save All" title="Save all" />
+# ICON_MYLISTS=<img src="/screens/my_lists.gif" alt="My Lists" />
+ICON_MYLISTS_EXPORT=<img src="/screens/mylists_export.gif" alt="Export My Lists" />
+ICON_MYLIST_REMOVE_DUPLICATES=<img src="/screens/mylist_remove_duplicates.gif" alt="Remove titles already in Reading History" />
+ICON_MYLISTS_REQUEST=<img src="/screens/mylists_request.gif" alt="Request" />
+ICON_MYLISTS_SAVE=<img src="/screens/mylists_save.gif" alt="Save to My Lists" title="Save to My Lists" />
+ICON_BACK_TO_MYLISTS=<img src="/screens/back_to_mylists.gif" alt="Return to My Lists" title="Return to My Lists" />
+ICON_SELECT_ALL=<img src="/screens/select_all.gif" alt="Select All" title="Select All" />
+INSERTTAG_INHEAD=<script type="text/javascript" src="/screens/bibdisplay.js"></script><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+# INSERTTAG_INHEAD=<script type="text/javascript" src="/screens/bibdisplay.js"></script><script type="text/javascript" src="/screens/jquery-1.3.2.js"></script><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+RESOURCETABLE=valign="top"|cellpadding="0" cellspacing="0"||Elsewhere
+# RESOURCETABLE=valign="top"|cellpadding="0" cellspacing="0"||More Information
+RIGHT_CELL_WIDTH=15|15
+SSLPORT=80:443|2082:444
+STARTOVER=/search
+# STARTOVER=/
+STATGROUP=login
+STYLESHEET=/screens/styles.css
+SUPPRESS_OPTION=MARC_DISPLAY
+SUPPRESS_OPTION_P0=MARC_DISPLAY
+SUPPRESS_OPTION_P1=MARC_DISPLAY
+SUPPRESS_OPTION_P10=MARC_DISPLAY
+SUPPRESS_OPTION_P11=MARC_DISPLAY
+SUPPRESS_OPTION_P30=MARC_DISPLAY
+SUPPRESS_OPTION_P31=MARC_DISPLAY
+SUPPRESS_OPTION_P50=MARC_DISPLAY
+SUPPRESS_OPTION_P51=MARC_DISPLAY
+SUPPRESS_OPTION_P60=MARC_DISPLAY
+SUPPRESS_OPTION_P61=MARC_DISPLAY
+SUPPRESS_OPTION_P62=MARC_DISPLAY
+SUPPRESS_OPTION_P63=MARC_DISPLAY
+SUPPRESS_OPTION_P70=MARC_DISPLAY
+SUPPRESS_OPTION_P72=MARC_DISPLAY
+SUPPRESS_OPTION_P81=MARC_DISPLAY
+SUPPRESS_OPTION_P82=MARC_DISPLAY
+SUPPRESS_OPTION_P83=MARC_DISPLAY
+SUPPRESS_OPTION_P84=MARC_DISPLAY
+SUPPRESS_OPTION_P90=MARC_DISPLAY
+SUPPRESS_OPTION_P167=MARC_DISPLAY
+TIMEOUT=1800;URL=http://catalog.nypl.org/
+TOPLOGO=@screens/toplogo.html
+UPDATECIRC=true
+XSTARTOVER=/
+PIN_RESET=true
+ICON_PIN_RESET=<img src="/screens/forgot_your_pin.gif" class="forgotPinButton" />
+# ICON_NEARBY=<img src="/screens/near_shelf.gif"/>
+
+
+# Scoping
+RESET_SCOPE=true
+
+
+# Staff
+BUT_PUBLIC=/screens/public.gif" border="0" class="button" alt="Public view of this record" title="Public view of this record
+BUT_STAFF=/screens/staff.gif" border="0" class="button" alt="Staff view of this record" title="Staff view of this record
+ICON_AUTHORITY=View Authority Record
+STAFF=106
+STAFF_LOGGEDIN_MSG=<span class="loggedInMessage">You are logged into staff mode at %s as %s</span>
+
+
+# General and Phrase Searching
+# BUT_ANOTHER=/screens/another.gif" border="0" class="button" alt="Another search of the same type" title="Another search of the same type
+BUT_NEWSRCH=/screens/startover.gif" border="0" class="button" alt="Start Over with a different search type" title="Start Over with a different search type
+BUT_WORDSRCH=/screens/wordsrch.gif" border="0" class="button" alt="repeat this search as keyword search" title="repeat this search as keyword search
+DROP_DOWN=Xatsdhic
+# DROP_DOWN=Xatdcejgiloprsvhym
+IBROWSE_MAX=32000
+KEYWORD_COLOR=Y|all|red
+MULT_LIMITS=true
+#NOSEARCH edited by III to add qvz, old value nubfw
+#NOSEARCH edited by III to add %#, old value nubfwqvz
+NOSEARCH=nubfwqz%#
+OFFER_HISTORY=TRUE
+
+
+# Advanced Searching
+AVS_MODIFY_TAG=X
+AVS_TAG=XYZPHJQIL
+# BUT_MODIFY=/screens/modify.gif" border="0" class="button" alt="Modify Search" title="Modify Search
+BUT_SHOWSIM=/screens/showsim.gif" border="0" class="button" alt="Show more like this" title="Show more like this
+IMAGE_AVS1=/screens/relevance1.gif
+IMAGE_AVS2=/screens/relevance2.gif
+IMAGE_AVS3=/screens/relevance3.gif
+IMAGE_AVS4=/screens/relevance4.gif
+IMAGE_AVS5=/screens/relevance5.gif
+# ICON_AWS_BYRELEVANCE_LINK=
+# ICON_AWS_BYDATE_LINK=
+# ICON_AWS_BYTITLE_LINK=
+RELSEARCH=searchtool||<img src="/screens/relsearch.gif" class="button" alt="See Related Searches" />
+
+
+# Search Results
+AUTHMSG=<em>%u</em> -- See %w <strong>%a</strong> <span class="authPublicNote">%p</span>|%u -- See Also %w %a <span class="authPublicNote">%p</span>
+AUTHMSG_SR=athe later heading|bthe earlier heading|dthe full form of the heading|fa musical composition based on this work|gthe narrower term|hthe broader term
+BODYPARAM=bgcolor="#FFFFFF"
+BRIEF=UR
+# BROWSE=245/ab/0|240/a/0|970/t/0|/abl/0
+BROWSE_HEADERS=^|Format|^
+BUT_BRIEF=/screens/brief.gif" border="0" class="button" alt="Brief display" title="Brief display
+BUT_EXTENDED=/screens/extended.gif" border="0" class="button" alt="Extended display" title="Extended display
+BUT_LIMAVAIL=/screens/limavail.gif
+BUT_LIMIT=/screens/limit.gif" border="0" class="button" alt="Limit or Sort these search results" title="Limit or Sort these search results
+BUT_UNLIMAVAIL=/screens/unlimavail.gif
+DISPLAY_245=atd
+EXTENDED=AU
+# EXTENDED=CT
+HEADING_LENGTH=100
+# ICON_856LINK=<img src="/screens/bullet.gif" alt="Bullet Point" style="margin-right:5px"/>Online resource
+# ICON_856LINK=<img src="/screens/bullet.gif" alt="" style="margin-right:5px"/>Website
+ICON_962LINK=<img src="/screens/bullet.gif" alt="" style="margin-right:5px"/>Digital image
+# ICON_BOOKCART=<img src="/screens/add_to_saved.gif" alt="Add to Saved Records" title="Add to Saved Records" class="button" />
+# ICON_BOOKCART=<img src="/screens/bookcart.gif" alt="Add to Book Cart" title="Add to Book Cart" class="button" />
+ICON_BOOKCART_SAVED=<img src="/screens/remove_from_saved.gif" alt="Remove from Saved Records" title="Remove from Saved Records" class="button" />
+# ICON_BOOKCART_SAVED=<img src="/screens/bookcart_saved.gif" alt="Remove from Book Cart" title="Remove from Book Cart" class="button" />
+ICON_FULLRECORD=<img src="/screens/bullet.gif" alt="" style="margin-right:5px" />View Full Record
+# ICON_FULLRECORD=<img src="/screens/viewfullrecord.gif" alt="View full record" class="button" /> See Full Record
+ICON_LOCATEINRESULTS=<img src="/screens/locateinresults.gif" alt="Locate in results" class="button" title="Locate in results" />
+ICON_PAGING_CAPTION=Result Page&nbsp;
+ICON_PAGING_NEXT=Next
+ICON_PAGING_PREV=Previous
+ICON_SAVEALLPAGE=<img src="/screens/saveallpage.gif" alt="Save all records on this page" class="button" title="Save all records on this page"/>
+ICON_SAVEMARKED=<img src="/screens/savemarked.gif" alt="Save marked records" title="Save marked records" class="button" />
+# IMAGE_MATTYPE-=/screens/media_book.gif
+IMAGE_MATTYPE2=/screens/media_periodical.gif
+IMAGE_MATTYPE3=/screens/media_overdrive_logo.jpg
+IMAGE_MATTYPEa=/screens/media_book.gif
+IMAGE_MATTYPEd=/screens/media_music.gif
+IMAGE_MATTYPEe=/screens/media_cartographic_printed.gif
+IMAGE_MATTYPEf=/screens/media_cartographic_printed.gif
+IMAGE_MATTYPEg=/screens/media_projectedmedia.gif
+IMAGE_MATTYPEh=/screens/media_microfilm1.jpg
+IMAGE_MATTYPEi=/screens/media_nonmusicalsound.gif
+IMAGE_MATTYPEj=/screens/media_musicalsound.gif
+IMAGE_MATTYPEk=/screens/media_2dartwork.gif
+IMAGE_MATTYPEl=/screens/media_large_print4.jpg
+# IMAGE_MATTYPEl=/screens/media_book.gif
+IMAGE_MATTYPEm=/screens/media_computerfile.gif
+IMAGE_MATTYPEn=/screens/media_overdrive_logo.jpg
+# IMAGE_MATTYPEo=/screens/media_3dartwork.gif
+IMAGE_MATTYPEp=/screens/media_archives2.jpg
+# IMAGE_MATTYPEp=/screens/media_3dartwork.gif
+IMAGE_MATTYPEq=/screens/media_overdrive_logo.jpg
+# IMAGE_MATTYPEr=/screens/media_
+# IMAGE_MATTYPEr=/screens/media_3dartwork.gif
+IMAGE_MATTYPEs=/screens/media_vhs.gif
+IMAGE_MATTYPEt=/screens/media_quill1.jpg
+IMAGE_MATTYPEu=/screens/headphones4.gif
+IMAGE_MATTYPEv=/screens/media_dvd1.jpg
+IMAGE_MATTYPEw=/screens/resource.gif
+# IMAGE_MATTYPEx=/screens/media_
+IMAGE_MATTYPEy=/screens/media_compact_disc1.jpg
+IMAGE_MATTYPEz=/screens/media_ebook.gif
+# IMAGE_MATTYPE@=/screens/media_ebook.gif
+# INDEX_EXT=Xatdcoi
+# INDEX_EXT=cejpiglo,v
+INDEX_EXT=c
+MEDIA=2
+NO_COPIES=Currently no copies available
+SORT_BROWSE=r:Newest First|c:Oldest First|n:Call Number|a:Author|t:Title|m:Format
+# SORT_MEDIA=@amcdji
+SUPPRESS_YEAR=False
+TABLEPARAM_BRIEFCIT=true|border="0" cellpadding="3" width="100%"
+TABLEPARAM_BROWSE=width= "100%" cellpadding="2" cellspacing="0"|align="center" cellpadding="3" cellspacing="0"|width="100% cellpadding="3" cellspacing="0"
+
+
+# Record Displays
+BIB_TOC_HEADER=<strong>Table of Contents</strong>
+BUT_MARC_DISPLAY=/screens/marc_display.gif" border="0" class="button" alt="MARC display" title="MARC display
+BUT_REGULAR_DISPLAY=/screens/regular_display.gif" border="0" class="button" alt="back to Regular Display of record" " title="back to Regular Display of record"
+BUT_RTRNTB=/screens/rtrntb.gif" border="0" class="button" alt="Return to Browse" title="Return to Browse
+DISPLAY_856=3yz|true
+# DISPLAY_856=[subfields]|[new window]
+HOLDINGS_POS=atpeR|atpeR
+ICON_BIB_HOLDINGS_ITEMS=View Items
+# ICON_BIB_HOLDINGS_ITEMS=View Copies
+ICON_BIB_PAGING_CAPTION=Result: 
+# ICON_BIB_PAGING_NEXT=<img src="/screens/bib_paging_next.gif" class="button" alt="Next Record" />
+ICON_BIB_PAGING_PREV=Previous
+# ICON_BIB_PAGING_PREV=<img src="/screens/bib_paging_prev.gif" class="button" alt="Previous Record" />
+ICON_RECORDLINK=<div class="bibRecordLink"><img src="/screens/permlink.gif"/>&nbsp;<a id="recordnum" href="%s">Permanent link for this record</a></div>
+LINK856TEXT=Connect to
+LOC_ag*=http://www.nypl.org/locations/aguilar
+LOC_al*=http://www.nypl.org/locations/allerton
+LOC_ba*=http://www.nypl.org/locations/baychester
+LOC_bc*=http://www.nypl.org/locations/bronx-library-center
+LOC_be*=http://www.nypl.org/locations/belmont
+LOC_bl*=http://www.nypl.org/locations/bloomingdale
+LOC_br*=http://www.nypl.org/locations/george-bruce
+LOC_bt*=http://www.nypl.org/locations/battery-park-city
+LOC_ca*=http://www.nypl.org/locations/cathedral
+LOC_ch*=http://www.nypl.org/locations/chatham-square
+LOC_ci*=http://www.nypl.org/locations/city-island
+LOC_cl*=http://www.nypl.org/locations/morningside-heights
+LOC_cp*=http://www.nypl.org/locations/clasons-point
+LOC_cs*=http://www.nypl.org/locations/columbus
+LOC_ct*=http://www.nypl.org/locations/castle-hill
+LOC_dh*=http://www.nypl.org/locations/dongan-hills
+LOC_dy*=http://www.nypl.org/locations/spuyten-duyvil
+LOC_ea*=http://www.nypl.org/locations/eastchester
+LOC_ep*=http://www.nypl.org/locations/epiphany
+LOC_ew*=http://www.nypl.org/locations/edenwald
+LOC_fe*=http://www.nypl.org/locations/58th-street
+LOC_fw*=http://www.nypl.org/locations/fort-washington
+LOC_fx*=http://www.nypl.org/locations/francis-martin
+LOC_gc*=http://www.nypl.org/locations/grand-central
+LOC_gd*=http://www.nypl.org/locations/grand-concourse
+LOC_gk*=http://www.nypl.org/locations/great-kills
+LOC_hb*=http://www.nypl.org/locations/high-bridge
+LOC_hd*=http://www.nypl.org/locations/125th-street
+LOC_hf*=http://www.nypl.org/locations/hamilton-fish
+LOC_hg*=http://www.nypl.org/locations/hamilton-grange
+LOC_hk*=http://www.nypl.org/locations/huguenot-park
+LOC_hl*=http://www.nypl.org/locations/harlem
+LOC_hp*=http://www.nypl.org/locations/hudson-park
+LOC_hs*=http://www.nypl.org/locations/hunts-point
+LOC_ht*=http://www.nypl.org/locations/countee-cullen
+LOC_hu*=http://www.nypl.org/locations/115th-street
+# LOC_ia=" target="new
+# LOC_ij=" target="new
+LOC_in*=http://www.nypl.org/locations/inwood
+LOC_jm*=http://www.nypl.org/locations/jefferson-market
+LOC_jp*=http://www.nypl.org/locations/jerome-park
+LOC_kb*=http://www.nypl.org/locations/kingsbridge
+LOC_kp*=http://www.nypl.org/locations/kips-bay
+LOC_lb*=http://www.nypl.org/locations/heiskell
+LOC_lm*=http://www.nypl.org/locations/new-amsterdam
+LOC_mb*=http://www.nypl.org/locations/macombs-bridge
+LOC_me*=http://www.nypl.org/locations/melrose
+LOC_mh*=http://www.nypl.org/locations/mott-haven
+LOC_ml*=http://www.nypl.org/locations/mulberry-street
+LOC_mm*=http://www.nypl.org/locations/mid-manhattan-library
+LOC_mn*=http://www.nypl.org/locations/mariners-harbor
+LOC_mo*=http://www.nypl.org/locations/mosholu
+LOC_mp*=http://www.nypl.org/locations/morris-park
+LOC_mr*=http://www.nypl.org/locations/morrisania
+LOC_mu*=http://www.nypl.org/locations/muhlenberg
+LOC_mya*=http://www.nypl.org/locations/lpa
+LOC_nb*=http://www.nypl.org/locations/west-new-brighton
+LOC_nd*=http://www.nypl.org/locations/new-dorp
+LOC_ns*=http://www.nypl.org/locations/96th-street
+LOC_ot*=http://www.nypl.org/locations/ottendorfer
+LOC_pk*=http://www.nypl.org/locations/parkchester
+LOC_pm*=http://www.nypl.org/locations/pelham-bay
+LOC_pr*=http://www.nypl.org/locations/port-richmond
+LOC_rc2*=http://www.nypl.org/help/get-what-you-need/access-offsite-collections
+LOC_rd*=http://www.nypl.org/locations/riverdale
+LOC_ri*=http://www.nypl.org/locations/roosevelt-island
+LOC_rs*=http://www.nypl.org/locations/riverside
+LOC_rt*=http://www.nypl.org/locations/richmondtown
+LOC_sa*=http://www.nypl.org/locations/st-agnes
+LOC_sb*=http://www.nypl.org/locations/south-beach
+LOC_scf*=http://www.nypl.org/locations/divisions/jbh-research-and-reference-division
+LOC_sd*=http://www.nypl.org/locations/sedgwick
+LOC_se*=http://www.nypl.org/locations/seward-park
+LOC_sg*=http://www.nypl.org/locations/st-george-library-center
+LOC_sl*=http://www.nypl.org/locations/sibl
+LOC_ss*=http://www.nypl.org/locations/67th-street
+LOC_st*=http://www.nypl.org/locations/stapleton
+LOC_sv*=http://www.nypl.org/locations/soundview
+LOC_tg*=http://www.nypl.org/locations/throgs-neck
+LOC_th*=http://www.nypl.org/locations/todt-hill-westerleigh
+LOC_tm*=http://www.nypl.org/locations/tremont
+LOC_ts*=http://www.nypl.org/locations/tompkins-square
+LOC_tv*=http://www.nypl.org/locations/tottenville
+LOC_vc*=http://www.nypl.org/locations/van-cortlandt
+LOC_vn*=http://www.nypl.org/locations/van-nest
+LOC_wb*=http://www.nypl.org/locations/webster
+LOC_wf*=http://www.nypl.org/locations/west-farms
+LOC_wh*=http://www.nypl.org/locations/washington-heights
+LOC_wk*=http://www.nypl.org/locations/wakefield
+LOC_wl*=http://www.nypl.org/locations/woodlawn-heights
+LOC_wo*=http://www.nypl.org/locations/woodstock
+LOC_wt*=http://www.nypl.org/locations/westchester-square
+LOC_yv*=http://www.nypl.org/locations/yorkville
+MARC=true
+# SHOWOREC=no_cdate
+TABLEPARAM_BIB=width="100%" cellpadding="2" cellspacing="0"|cellpadding="2" cellspacing="0" align="center"
+TABLEPARAM_BIB_DETAIL=width="100%" cellspacing="1" cellpadding="2"
+TABLEPARAM_BIB_HOLDINGS=width="100%" cellspacing="1" cellpadding="2"
+TABLEPARAM_BIB_HOLDS=width="100%" cellspacing="1" cellpadding="2"
+TABLEPARAM_BIB_INFO=width="100%" cellspacing="1" cellpadding="2"
+TABLEPARAM_BIB_ITEMS=width="100%" cellspacing="1" cellpadding="2"
+TABLEPARAM_BIB_LINKS=width="100%" cellspacing="1" cellpadding="2"
+TABLEPARAM_BIB_ORDER=width="100%" cellspacing="1" cellpadding="2"
+TABLEPARAM_BIB_PAGER=border="0"
+TABLEPARAM_BIB_THUMBNAILS=align="center" cellspacing="1" cellpadding="2"
+TABLEPARAM_BIB_TOC=border="0" cellspacing="1"
+WEBPUBDEF=true
+
+
+# Electronic Resource Management
+BIB_LICENSE_FIELDS=Permitted:Vlw|Restricted:Vlx
+# BIB_LICENSE_FIELDS_BRIEF=
+BIB_RESOURCE_CAPTION=<strong>This title is available electronically via:</strong>
+BIB_RESOURCE_FIELDS=:VeT|:VeE|:Vek
+BIB_RESOURCE_FIELDS_BRIEF=:VcY|:Vch|:VeE
+BIB_RESOURCE_NUM_BRIEF=A
+ICON_BIB_RESOURCE_DETAILS=<img src="/screens/bib_resource_details.gif" class="button" alt="Full Details" title="Full Details" />
+ICON_RESOURCE_RECORD=<img src="/screens/resource_record.gif" class="button" alt="About This Resource" />
+# ICON_VIEW_ADDITIONAL_ITEMS=<img src="/screens/view_additional_items.gif" alt="View Additional Items" title="View Additional Items" />
+RESOURCE_ADVISORY=k
+RESOURCE_HOLDINGS_FIELDS=Title:Vbt|LIB HAS:Vch|:VcY
+RESOURCE_HOLDING_FIELDS=Title:VbT|Coverage:Vch|Full Text:VcY
+RESOURCE_HOLDINGS_MAX=12
+# RESOURCE_LICENSE_FIELDS=Permitted:Vlw|Restricted:Vlx|Available to:Vlf|Access notes:Vla
+TABLEPARAM_BIB_LICENSE=width="100%" cellpadding="2"
+TABLEPARAM_BIB_RESOURCE=border="0" cellspacing="1" cellpadding="2"
+TABLEPARAM_BIB_RESOURCE_BRIEF=border="0" cellspacing="1" cellpadding="2"
+TABLEPARAM_RESOURCE_BIB=width="100%" cellpadding="2"
+TABLEPARAM_RESOURCE_LICENSE=width="100%" cellpadding="2"
+TABLEPARAM_RESOURCE_RESOURCE=width="100%" cellspacing="1" cellpadding="2"
+
+
+# Holdings
+BUT_CARDFORM_BOX=/screens/cardform_box.gif" border="0" class="button" alt="Box display" title="Box display
+BUT_CARDFORM_LIN=/screens/cardform_lin.gif" border="0" class="button" alt="Line display" title="Line display
+CHECKIN_BGCOLOR=ARRIVED=#FFFFFF|EXPECTED=#FFFFFF|TO BIND/BOUND=#FFFFFF|LATE=#FFFFFF|OTHER=#FFFFFF
+CHECKIN_FONTCOLOR=ARRIVED=GREEN|EXPECTED=BLACK|TO BIND/BOUND=RED|LATE=BLACK|OTHER=BLACK
+# DISPLAY_CHECKIN_856=z
+HOLDINGS_REQ=Deliver this article to me
+SORT_ITEMS=true
+SUPPRESS_CARD=FUI
+# SUPPRESS_CARD=UI
+
+
+# My Lists
+MY_LISTS=true
+# ICON_MYLISTS_REMOVE_DUPLICATES=<img src="/screens/mylist_remove_duplicates.gif" alt="Remove duplicates" />
+ICON_MYLISTS_REQUEST=<img src="/screens/request.gif"/>
+ICON_MYLISTS_SAVE_TO_LIST=<img src="/screens/save_to_my_lists.gif" alt="Save marked records to My Lists" title="Save marked records to My Lists" />
+
+
+# Saving and Exporting
+# BRIEF_EXPORT=c|a|t|p
+BUT_BIBEXPORT=/screens/bibexport.gif" border="0" class="button" alt="Save this record" title="Save this record
+BUT_CLEAR_MARKED=/screens/clear_saved_records.gif" class="button" alt="Clear All Saved Records" title="Clear All Saved Records
+# BUT_CLEAR_MARKED=/screens/clear_marked.gif
+BUT_EXPORT_MULTI=/screens/export_multi.gif" class="button" alt="Export multiple records" title="Export multiple records
+# BUT_EXPORT_VIEW_SAVES=/screens/export_view_saves.gif
+BUT_PAT_GETPSAVEDRECS=/screens/pat_getpsavedrecs.gif" border="0" class="button" alt="Preferred Searches" title="Preferred Searches
+BUT_VIEW_SAVES=/screens/view_saved_records.gif" class="button" alt="View saved records" title="View saved records
+EMAILOP=From the NYPL Catalog|nyplsierra@nypl.org
+EXPORT_SELECT_TABLE=Sendto:browser,email,local|Format:full,brief,procite,endnote
+# EXPORT_SELECT_TABLE=Sendto:browser,email,local|Format:full,brief,marc,procite,endnote
+XRECTYPE=boi
+
+
+# Requesting
+BIBREQUEST=true
+BUT_REQUEST=/screens/request.jpg" class="button" border="0" alt="Place Request" title="Place Request
+BUT_REQUEST_ALL=/screens/request_all.gif" alt="Request all available titles" title="Request all available titles" class="button
+BUT_REQUEST_MULTI=/screens/request_multi.gif" class="button" alt="Request multiple titles" title="Request multiple titles
+BUT_REQUEST_RESET=/screens/request_reset.gif" alt="Reset Form" title="Reset Form" class="button
+BUT_REQUEST_SELECTED=/screens/request_selected.gif" alt="Request Selected" title="Request Selected" class="button
+ICON_REQUEST=<img src="/screens/request.jpg" alt="" style="margin-right:5px" />
+# REQFILLTIME=14|<br />Request available in approximately %d days|<br />Current estimated availability: approximately %d days|<br />This material may be immediately available
+REQUEST=Place Hold|bib|ask|N
+# REQUEST_ARTICLE_IFCHKIN=yes
+# REQUEST_INSTRUCTION=Please enter any special instructions: 
+REQUEST_MULTI=Request All Items in Book Cart|bib|ask
+
+
+# LAS Remote Storage (GFA Requesting)
+# To mask the request link, set option below to invoke image with zero dimensions (14 Aug 2009)
+# ICON_LAS_REQUEST=<img src="/screens/request_las.gif" width="0" height="0" />
+# ICON_LAS_REQUEST=<br /><img src="/screens/bullet.gif" alt="" style="margin-right:5px" />Request from Offsite Storage
+ICON_LAS_REQUEST=<img src="/screens/request_las.gif" alt="Request from Storage" />
+
+
+# Patron Record
+BUT_PAT_CANCEL=/screens/cancel.gif" class="button" alt="Cancel" title="Cancel" border="0"
+BUT_PAT_CANCELALL=" style="display: none"
+# BUT_PAT_CANCELALL=/screens/pat_cancelall.gif
+BUT_PAT_CANCELMARK=/screens/pat_cancelmark.gif" border="0" class="button" alt="Cancel Selected" title="Cancel Selected
+BUT_PAT_CHKOUTS=/screens/pat_chkouts.gif
+BUT_PAT_FINES=/screens/pat_fines.gif
+BUT_PAT_HOLDS=/screens/pat_holds.gif
+BUT_PAT_INFO=/screens/pat_info.gif
+BUT_PAT_MSGS=/screens/pat_msgs.gif
+BUT_PAT_PIN=/screens/pat_pin.gif
+BUT_PAT_RENEWALL=/screens/pat_renewall.gif" class="button" border="0" alt="Renew All" title="Renew All
+BUT_PAT_RENEWMARK=/screens/pat_renewmark.gif" border="0" class="button" alt="Renew Marked" title="Renew Marked
+BUT_PAT_SORTBYCHKOUT=/screens/pat_sortbychkout.gif" border="0" class="button" alt="Sort By Checkout Date" title="Sort By Checkout Date
+BUT_PAT_SORTBYDUE=/screens/pat_sortbydue.gif" border="0" class="button" alt="Sort By Due Date" title="Sort By Due Date
+BUT_PAT_SUBMIT=/screens/continue.jpg" border="0" class="button" alt="Submit" title="Continue
+BUT_PSTARTOVER=/screens/startover.gif" border="0" class="button" alt="Start Over" title="Start Over
+# BUT_RET2PREC=/screens/ret2prec.gif
+ICON_RET2PREC=My Account
+# BUT_UPDATE_HOLDS=/screens/pat_psearch_update.gif" alt="Modify Selected Holds" title="Modify Selected Holds
+BUT_UPDATE_HOLDS=/screens/modify_selected.gif" class="button" alt="Modify Selected Holds" title="Modify Selected Holds
+CHANGE_HOLD_LOC=true
+FREEZE_HOLDS=true
+ICON_CLOSEWINDOW=<img src="/screens/closewindow.gif" class="button" alt="Close Window" title="Clase Window" />
+ICON_PAT_CANCELALL=<img src="/screens/pat_cancelall.gif" class="button" alt="Cancel All" />
+ICON_PAT_CANCELMARK=<img src="/screens/pat_cancelmark.gif" class="button" alt="Cancel Selected" title="Cancel Selected" />
+ICON_SORTPUDATE=<img src="/screens/sortpudate.gif" class="button" alt="Sort by Pickup Date" title="Sort by Pickup Date" />
+ICON_SORTREQDATE=<img src="/screens/sortreqdate.gif"  border="0" alt="Sort by Request Date" title="Sort by Request Date" />
+MASK_BARCODE=F
+MODIFY_PFLDS=tzHu
+NEWPIN_MSG=Please enter a Personal Identification Number (PIN). You must choose a 4-digit number. 
+# PATRON_FIELDS=n/a|F/43|
+#Note that in the PATRON_MSG web option you should replace z with the field tag used on your system for messages. 
+PATRON_MSG=m|Important Message
+PATRON_NOTICES=pz
+PATRONVIEW_START=chkouts,holds,fines,mylists,psearch,readhist
+# PATRONVIEW_START=holds,ill,mylists,fines,chkouts,bookings,psearch,mffavs,readhist,patrate,patreview,programs,irnr
+PIN_ALPHA_NUM=false
+PIN_NUM_ONLY=true
+MIN_PIN_LENGTH=4
+PIN_RESET_EMAIL=Request to reset your library PIN|nyplsierra@nypl.org|nyplsierra@nypl.org
+PSTARTOVER=/
+SEEPUDATE=true
+TABLEPARAM_PATDISP=border="0"|border="0"|border="0"
+TABLEPARAM_PATFUNC=border="0"|border="0"|border="0"
+TIMEOUT_POPUP=180
+
+
+# My Millennium
+# ALTERNATE_ID=x
+ALTERNATE_ID_EMAIL=noreply@nypl.org|NYPL: Your login name has changed
+# BUT_LOGOUT=/screens/logout.gif "border="0" class="button" alt="Logout
+BUT_PAT_PSEARCH_REMOVE=/screens/pat_psearch_remove.gif" border="0" class="button" alt="Clear All Saved Searches" title="Clear All Saves Searches
+BUT_PAT_PSEARCH_UPDATE=/screens/pat_psearch_update.gif" border="0" class="button" alt="Update List" title="Update List
+BUT_PAT_SEARCH=/screens/pat_search.gif
+# BUT_PLOGOUT=/screens/ret2prec.gif
+CIRC_HIST_LIMIT_TEXT=Limit to titles which aren't in my Reading History
+ICON_PAT_DELETE_ALL=<img src="/screens/pat_delete_all.gif" style="display: none" />
+# ICON_PAT_DELETE_ALL=<img src="/screens/pat_delete_all.gif" class="button" alt="Delete All" />
+ICON_PAT_DELETE_MARKED=<img src="/screens/pat_delete_marked.gif" class="button" alt="Delete Marked" title="Delete Marked" />
+ICON_READING_HISTORY=<img src="/screens/reading_history.gif" class="button" alt="My Reading History" />
+ICON_READING_HISTORY_OPTIN=<img src="/screens/reading_history_optin.gif" class="button" alt="Opt In" />
+ICON_READING_HISTORY_OPTOUT=<img src="/screens/reading_history_optout.gif" class="button" alt="Opt Out" />
+ICON_READING_HISTORY_EXPORT=<img src="/screens/export_readinglist.gif" /> 
+LOGGEDIN_MSG=<span class="loggedInMessage">You are logged into %s as %s</span>
+NO_REVERIFY=acq,book,ill,media,mmf,req,wam,z39,mfrpro
+PREF_SEARCHES=55|Y
+PREFTEXT=Add to Saved Searches
+# PREFTEXT=Save as preferred search
+READING_HISTORY=optin|true|
+TOPLOGO_LOGGEDIN=Y
+
+
+# Patron Ratings
+# ICON_PATRATE=<img src="/screens/patrate.gif" alt="My Ratings" class="button" />
+# ICON_RATE_GROUP=<img src="/screens/rate_group.gif" title="Rated %d stars out of 5 based on %n ratings" />
+# ICON_RATE_MY=<img src="/screens/rate_my.gif" title="You rated this %d stars out of 5" />
+# ICON_RATE_NEED=<img src="/screens/rate_need.gif" title="Rate this material!" />
+# ICON_RATE_NO=<img src="/screens/rate_no.gif" title="No one has rated this material" />
+# ICON_RATE_PAD=<img src="/screens/rate_pad.gif" title="Rated %d stars out of 5 based on %n ratings" />
+PATRATE=false
+
+
+# Ecommerce
+CC_APPROVED=Your payment has been approved.
+CC_DECLINED=Sorry. Your payment has been declined. Please confirm your information is entered correctly or pay at the library.
+CC_EMAIL_RECEIPT=Receipt for payment to Your Library|nyplsierratest@nypl.org|nyplsierratest@nypl.org
+# DONATE_NOTIFY=A new donation has been received|circadm@example.org|donormgmt@example.org
+ICON_PAY=<img src="/screens/button_pay_online.gif" class="button" alt=Pay Online" />
+ICON_PAY_CLEAR_ALL=<img src="/screens/button_clear_all.gif" class="button" alt=Clear All" />
+ICON_PAY_SELECT_ALL=<img src="/screens/button_select_all.gif" class="button" alt=Select All" />
+ICON_PRINT=<img src="/screens/print.gif" class="button" alt="Print" />
+# MINDONATE=1000|Donations must be at least $10.00 to cover processing costs. Thank you.
+PAYAMTS=101|Please visit the library to pay this amount|00
+
+
+# Bookings
+BOOKINGS=no|true|true
+BOOKINGS_DAY_LEGEND=<span class="bookingsLegend">Library closed on <span id="closed">X</span> hours. No items available on <span id="unavailable">grayed out</span> hours.</span>
+BOOKINGS_MONTH_LEGEND=<span class="bookingsLegend">Library closed on <span id="closed">X</span> days. No items available on <span id="unavailable">grayed out</span> days.</span>
+BOOKINGS_REPEAT=true
+# BUT_PAT_BOOKING=/screens/pat_booking.gif "border="0" class="button" alt="Future Bookings
+ICON_BOOKINGS_HEADER=<span class="bibBookingsHeader">Book This Material</span>
+ICON_DAILYCAL=View Daily Calendar
+ICON_HOURLYCAL=View Hourly Calendar
+ICON_NEXTCAL=Next
+ICON_PREVCAL=Previous
+
+
+# ILL
+BUT_ILL_CANCEL=/screens/ill_cancel.gif
+BUT_ILL_FORM=/screens/ill_form.gif
+BUT_ILL_HOME=/screens/ill_home.gif
+# BUT_PAT_ILL=/screens/pat_ill.gif
+ILL_CONF_EMAIL_SUBJECT=Library notification of Inter-library Loan request
+ILL_HOME=/screens/ill.html
+
+
+# Media Management
+BUT_RET2CRS=/screens/ret2crs.gif "border="0" class="button" alt="Return to Course
+ERESERVE=[0123456789]
+# IMAGE_PRINT=yes
+# IMAGE_SAVE=yes
+
+
+# Reserves
+RSRV_FORMAT=true
+# RSRV_HEADER=Materials for this Course
+# RSRV_HEADER=Featured Titles This Month
+TABLEPARAM_RSRV_BIBS=width="100%" cellpadding="3" cellspacing="0"
+
+
+# Featured Lists
+BUT_PREVSCRN=/screens/prevscrn.gif" border="0" class="button" alt="Previous Screen" title="Previous Screen
+BUT_RET2FEAT=/screens/ret2feat.gif "border="0" class="button" alt="Return to Featured Lists
+# FEATURED_LIST=101,102,103,104,105,106,107|FEATURED LISTS|CATEGORY|# of Titles
+
+
+# Content Linking and Other Resources
+# BIBIMAGE=http://www.syndetics.com/hw7.pl?isbn=%s/MC.GIF&client=nypp
+BIBIMAGE=https://contentcafe2.btol.com/ContentCafe/Jacket.aspx?UserID=NYPL49807&Password=CC68707&Return=1&Type=S&Value=%s&erroroverride=1|I|https://contentcafe2.btol.com/ContentCafeClient/ContentCafe.aspx?UserID=NYPL49807&Password=CC68707&ItemKey=%s&Options=N
+# BIBIMAGE=http://syndetics.com/index.aspx/?isbn=%s/SC.gif&client=iiit&type=hw7|i|http://syndetics.com/index.aspx/?isbn=%s/SC.gif&client=iiit&type=hw7
+# BIBIMAGE=http://www.TheContentServer.com/bin/cntsvr.dll?GetImage&SysID=PUTACCOUNTHERE&CustID=PUTACCOUNTHERE&ISBN=%s&Type=S&Return=0|I|https://www.TheContentServer.com/bin/cntsvr.dll?GetImage&SysID=PUTACCOUNTHERE&CustID=PUTACCOUNTHERE&ISBN=%s&Type=L&Return=1
+BIBIMAGE_TEXT=More Information about this Title" title="More Information about this Title
+# BUT_ENCYCPD=/screens/encycpd.gif
+BUT_FULL_TEXT=/screens/full_text.gif
+EBADDRESS=http://www.worldcat.org/search/%s
+ICON_BUT_ENCYCPD=Search OCLC WorldCat
+# WEBADDRESS=http://www.amazon.com/exec/obidos/search-handle-url/index=books&field-keywords=%s&bq=1/|I| http://www.amazon.com/exec/obidos/ASIN/%s|<img src="/screens/resourcelink.gif" alt="Other Resources" />|<img src="/screens/moreinfo.gif" alt="More Information" />|20
+WEBADDRESS=|I|http://contentcafe2.btol.com/ContentCafeClient/ContentCafe.aspx?UserID=NYPL49807&Password=CC68707&ItemKey=%s&Options=N||<IMG SRC="/screens/moreinfo.gif"border="0" alt="book cover" title="More Information about this Title" />
+XML_LABEL=<strong>XML data</strong>
+
+
+# WebBridge/Pathfinder Pro
+BUT_CLOSEFRAME=/screens/closeframe.gif
+BUT_RESOURCELINK=/screens/moreinfo.gif
+BUT_RET2RESOURCE=/screens/ret2resource.gif
+RESLINK=bibresourcetop|browseresourcetop||
+# WBHEADERTEXT=The following resources may provide additional information about<br />#HEADER#
+
+
+# Feeds
+RSS_MIN_TTL=10
+
+
+# Z39.50
+BUT_EMAIL=/screens/email.gif
+BUT_NEXTREC=/screens/nextrec.gif" border="0" class="button" alt="Next Record" title="Next Record
+BUT_PREVREC=/screens/prevrec.gif "border="0" class="button" alt="Previous Record" title="Previous Record
+BUT_Z39_ANOTHER=/screens/z39_another.gif "border="0" class="button" alt="
+BUT_Z39_REQUEST=/screens/request.gif "border="0" class="button" alt="
+BUT_Z39SEARCH=/screens/z39search.gif "border="0" class="button" alt="
+Z39BROADCAST=Z39.50 Broadcast Search:Please select the Z39.50 servers to which you want to send your search
+Z39MULTI=500:100
+
+
+# Partner
+BUT_RETHOME=/screens/rethome.gif "border="0" class="button" alt="
+
+
+# AirPAC
+# AIRPAC_PORT=6060
+AIRWKST_PORT=60300
+
+
+# Patron Registration
+SELFREG_ADDRESS=T|
+SELFREG_ERROR_EMAIL=nypllibrarycard@nypl.org|nypllibrarycard@nypl.org|Self Registration Error|nypllibrarycard@nypl.org
+SELFREG_INFO_EMAIL=nypllibrarycard@nypl.org|nypllibrarycard@nypl.org|NYPL Registration Confirmation|nypllibrarycard@nypl.org|selfregconfirm_email.html
+SELFREG_NAME_ORDER=1|2|3|,
+SELFREG_TEMPLATE=webpat
+TIMEOUT_SELFREG=300
+
+
+# My Federated Search (Research Pro or MetaFind)
+ICON_MFFAVS_HOME=&nbsp; &nbsp; <img src="/screens/mffavs_home.gif" alt="Go to Research Pro" />
+ICON_MFFAVS_SEARCH=<img src="/screens/mffavs_search.gif" alt="Search Research Pro" />
+ICON_PAT_MFFAVS=<img src="/screens/pat_mffavs.gif" alt="My Research Pro" />
+MFFAVS_CONFIRM=Your group, %s, has been saved successfully.
+MFFAVS_DENY=This function is not available. Please contact a librarian for further assistance.
+# MFFAVS_HOME=http://researchpro-[SITECODE]:[PORT]/iii/mfrpro-[SITECODE]/loadSearchPage.do?searchtype=simple&searchpage=simple&accountid=[ACCOUNT]&accountpassword=[ACCOUNT]&language=eng
+# MFFAVS_URL=true|[ACCOUNT]|[ACCOUNT]|/mfgo/http://researchpro-[SITECODE]:[PORT]/iii/mfrpro-[SITECODE]/search.do
+
+
+# WebPAC Pro
+BROWSE50=true
+ICON_REL_GROUP_1=<img src="/screens/relevance5.gif" alt="Most relevant">&nbsp;Most relevant titles&nbsp;
+ICON_REL_GROUP_2=<img src="/screens/relevance4.gif" alt="Highly relevant">&nbsp;Highly relevant titles&nbsp;
+ICON_REL_GROUP_3=<img src="/screens/relevance3.gif" alt="Very relevant">&nbsp;Very relevant titles&nbsp;
+ICON_REL_GROUP_4=<img src="/screens/relevance2.gif" alt="Relevant">&nbsp;Relevant titles&nbsp;
+ICON_REL_GROUP_5=<img src="/screens/relevance1.gif" alt="Other relevant">&nbsp;Other relevant titles&nbsp;
+ICON_SPELLCHECK_MORE=<spanclass="spellcheckToolMore">more&nbsp;&raquo;</span>
+ICON_SPELLCHECK_SEARCH=<img src="/screens/go_but.gif" class="button" alt="Search" title="Search" />
+# ICON_RESOURCE=
+INNOVATIVE_FOOTER=center|a
+IR_PLACEMENT=1
+SPELLCHECK=<span class="spellcheckTool">Did you mean %a? %s </span>
+
+
+# Research Pro
+# MF_BIBIMAGE=http://syndetics.com/index.aspx/?isbn=%s/SC.gif&client=PUTACCOUNTHERE&type=hw7|i|http://syndetics.com/index.aspx/?isbn=%s/SC.gif&client=PUTACCOUNTHERE&type=hw7
+# MF_BIBIMAGE=http://www.TheContentServer.com/bin/cntsvr.dll?GetImage&SysID=PUTACCOUNTHERE&CustID=PUTACCOUNTHERE&ISBN=%s&Type=S&Return=0|I|http://www.TheContentServer.com/bin/cntsvr.dll?GetImage&SysID=PUTACCOUNTHERE&CustID=PUTACCOUNTHERE&ISBN=%s&Type=L&Return=1
+MF_BOTLOGO=@screens/MFbotlogo.html
+MF_EMAIL_SENDER=researchpro@iii.com
+MF_ICON_ADVANCED_SEARCH=<img src="/screens/advancedsearch.gif" alt="Advanced Search" class="button" />
+MF_ICON_CLEAR=<img src="/screens/request_reset.gif" alt="Clear Form" class="button" />
+MF_ICON_CLOSE=<img src="/screens/closewindow.gif" alt="Close window" class="mfButton" />
+MF_ICON_DESELECTALL=<img src="/screens/pay_clear_all.gif" class="button" alt="Clear All" />
+MF_ICON_EMAIL=<img src="/screens/email.gif" class="mfButton" alt="Email"title="email"/>
+MF_ICON_HELP=<img src="/screens/help.gif" alt="Help" class="button" />
+MF_ICON_LOGOFFACCOUNT=<img src="/screens/logout.gif" alt="Logout" class="button" />
+MF_ICON_MFFAVS_GROUP=<img src="/screens/mf_mfavs_group.gif" class="button" alt="Save Group">
+MF_ICON_PATRON_REC=<img src="/screens/ret2prec.gif" class="button" alt="Return to Patron Record" />
+MF_ICON_NEW_SEARCH=<img src="/screens/newsrch.gif" class="button" alt="New Search" />
+MF_ICON_PRINT=<img src="/screens/print.gif" class="button" alt="Print" />
+MF_ICON_RET2CAT=<img src="/screens/ret2cat.gif" class="button" alt="Back to Catalog" />
+MF_ICON_SEARCH=<img src="/screens/search_research_pro.gif" alt="Search Research Pro" class="button"/>
+MF_ICON_SELECTALL=<img src="/screens/pay_select_all.gif" class="button" alt="Select All" />
+MF_ICON_SIMPLE_SEARCH=<img src="/screens/simplesearch.gif" alt="Simple Search" class="button" />
+MF_ICON_UPDATELIST=<img src="/screens/updatelist.gif" alt="Update List" />
+MF_ICON_VIEWSAVED=<img src="/screens/view_saves.gif" alt="View Saved" class="mfButton"/>
+MF_RESULTSVIEW=tabbed,View Results Tabbed By Resource|standard,View All Results Interfiled
+MF_RETURN=true
+MF_RETURN_URL=http://researchpro-[SITECODE]:[PORT]/iii/mfrpro-[SITECODE]/loadSearchPage.do?searchtype=simple&searchpage=simple&accountid=[ACCOUNT]&accountpassword=[ACCOUNT]
+MF_STYLESHEET=/screens/styles_mf.css
+MF_TOPLOGO=@screens/MFtoplogo.html
+
+
+# Program Registration
+PROG_AVS_TAG=PHJQIL
+PROGRAM_SECTION_FIELDS=Date/Time:VsT|Meets:Vss|Location:Fs285|Instructor:Vsn|Status:VsS
+# BUT_PAT_PROGRAMS=
+# BUT_PAT_SORTBYDATE=sortby_date.gif "border="0" class="button" alt="Sort by Date
+BUT_PAT_SORTBYNAME=sortby_name.gif" border="0" class="button" alt="Sort By Name" title="Sort By Name
+# BUT_RET2PROG=
+ICON_REGISTER=<br><strong>Click to Register</strong>
+ICON_ADD_TO_WAITLIST=<br><strong>Add to Waitlist</strong>
+ICON_VIEW_ADDITIONAL_SESSIONS=<img src="/screens/view_additional_sessions.gif" alt="View Additional Sessions">
+ICON_HIDE_ADDITIONAL_SESSIONS=<img src="/screens/hide_additional_sessions.gif" alt="Hide Additional Sessions">
+# ICON_PROGRAM=<img src="/screens/program.gif" alt="Library Event">
+# ICON_PROGRAM_CAL=<img src="/screens/program_cal.gif" alt="Events Calendar">
+TABLEPARAM_PROG_SECTIONS=width="95%" border="3" cellspacing="1" align="center"
+PATFEED_PROGRAM_SESSION_SOON=An event that you have registered for is coming up soon.  Please log on to My Account for the event date, time and location.
+PATFEED_PROGRAM_SESSION_TOMORROW=An event that you have registered for is coming up tomorrow.  Please log on to My Account for the event date, time and location.
+PATFEED_PROGRAM_SESSION_TODAY=An event that you have registered for is coming up today.  Please log on to My Account for the event date, time and location.
+
+
+# Web Access Management
+# ICON_LOGIN=
+# PORTAL_ID=
+# PORTAL_INST=
+# SSLPROXYPORT=
+# TIMEOUT_WAMPATRON=
+# WAM_ALERT_EMAIL=
+WAM_LOG_IP=true
+WAM_LOG_REJECTIONS=true
+# WAM_LOG_PNUM=
+WEBPROXY_COOKIE_REFRESH_TIME=0
+
+
+# Unfiled WWWOptions
+OVERRIDE_SLAVE_IP=10.224.129.105
+SLAVE_TO_MASTER_NOSSL=true
+
+# Chinese Language Web Options
+
+AVAILLIM_CHX=<span class="availLimMessage">可用条款限制搜索</span>|<span class="availLimMessage">可用条款限制搜索结果</span>
+BOTLOGO_CHX=@screens/botlogo_chx.html
+BUT_CANCEL_CHX=/screens/cancel_chx.gif
+BUT_CLOSEWINDOW_CHX=/screens/closewindow_chx.gif
+BUT_CLOSEWN_CHX=/screens/closewn_chx.gif
+BUT_RET2CAT_CHX=/screens/ret2cat_chx.gif "border="0" class="button" alt="
+BUT_STARTOVER_CHX=/screens/startover_chx.gif" border="0" class="button" alt="
+BUT_SUBMIT_CHX=/screens/submit_chx.gif "border="0" class="button" alt="
+ICON_CANCEL_CHX=<img src="/screens/cancel_chx.gif" alt="取消" class="button" />
+ICON_OK_CHX=<img src="/screens/ok_chx.gif" class="button" alt="OK" />
+ICON_PREVPAGE_CHX=<img src="/screens/prevscrn_chx.gif" class="button" alt="前" />
+ICON_SUBMIT_CHX=<img src="/screens/submit_chx.gif" alt="提交" class="button" />
+ICON_UPDATELIST_CHX=<img src="/screens/updatelist_chx.gif" alt="更新列表" class="button" />
+ICON_CLEAR_ALL_CHX=<img src="/screens/clear_all_chx.gif" alt="全消除"/>
+ICON_CLEAR_FORM_CHX=<img src="/screens/clear_form_icon_chx.gif" alt="清表"/>
+ICON_DELETE_SELECTED_CHX=<img src="/screens/delete_selected_chx.gif" alt="删除选择"/>
+ICON_SELECT_ALL_CHX=<img src="/screens/save_all_chx.gif" alt="全储存"/>
+INSERTTAG_INHEAD_CHX=<script type="text/javascript" src="/screens/bibdisplay.js"></script>
+RESOURCETABLE_CHX=valign="top"|cellpadding="0" cellspacing="0"||别处 
+STARTOVER_CHX=/search*chx
+TOPLOGO_CHX=@screens/toplogo_chx.html
+XSTARTOVER_CHX=/*chx
+BUT_PUBLIC_CHX=/screens/public_chx.gif
+BUT_STAFF_CHX=/screens/staff_chx.gif
+STAFF_LOGGEDIN_MSG_CHX=<span class="loggedInMessage">您已以馆员形式登入 %s 如 %s</span>
+BUT_ANOTHER_CHX=/screens/another_chx.gif
+BUT_NEWSRCH_CHX=/screens/startover_chx.gif
+BUT_WORDSRCH_CHX=/screens/wordsrch_chx.gif
+BUT_MODIFY_CHX=/screens/modify_chx.gif "border="0" class="button" alt="
+BUT_SHOWSIM_CHX=/screens/showsim_chx.gif "border="0" class="button" alt="
+ICON_REL_GROUP_1_CHX=<img src="/screens/relevance5.gif" alt="最有有关的">&nbsp;最有有关的 标题&nbsp;
+ICON_REL_GROUP_2_CHX=<img src="/screens/relevance4.gif" alt="高度有关的">&nbsp;高度有关的 标题&nbsp;
+ICON_REL_GROUP_3_CHX=<img src="/screens/relevance3.gif" alt="非常有关的">&nbsp;非常有关的 标题&nbsp;
+ICON_REL_GROUP_4_CHX=<img src="/screens/relevance2.gif" alt="有关的">&nbsp;有关的 标题&nbsp;
+ICON_REL_GROUP_5_CHX=<img src="/screens/relevance1.gif" alt="其他有关的 ">&nbsp;其他有关的  标题&nbsp;
+# ICON_AWS_BYRELEVANCE_LINK_CHX=
+# ICON_AWS_BYDATE_LINK_CHX=
+# ICON_AWS_BYTITLE_LINK_CHX=
+RELSEARCH_CHX=searchtool||<img src="/screens/relsearch_chx.gif" class="button" alt="查看相关搜索" />
+AUTHMSG_CHX=<em>%u</em> -- 参看 %w <strong>%a</strong> <span class="authPublicNote">%p</span>|%u -- 同时参看 %w %a <span class="authPublicNote">%p</span>
+AUTHMSG_SR_CHX=a最新标题|b早期标题|d标题之全表|f以此作品为依据之乐曲|g较窄之用语|h较宽之用语
+BROWSE_HEADERS_CHX=标记|媒体
+BUT_BRIEF_CHX=/screens/brief_chx.gif
+BUT_EXTENDED_CHX=/screens/extended_chx.gif
+BUT_LIMAVAIL_CHX=/screens/limavail_chx.gif
+BUT_LIMIT_CHX=/screens/limit_chx.gif
+BUT_UNLIMAVAIL_CHX=/screens/unlimavail_chx.gif
+# ICON_BOOKCART_CHX=<img src="/screens/bookcart_chx.gif" alt="书车" class="button" />
+ICON_BOOKCART_SAVED_CHX=<img src="/screens/bookcart_saved_chx.gif" alt="书车内" class="button" />
+ICON_FULLRECORD_CHX=<img src="/screens/viewfullrecord.gif" alt="查看详尽记录" class="button" /> 参看详尽记录
+ICON_LOCATEINRESULTS_CHX=<img src="/screens/locateinresults_chx.gif" alt="位于结果中" class="button" />
+ICON_PAGING_CAPTION_CHX=结果页&nbsp;
+ICON_PAGING_NEXT_CHX=后
+ICON_PAGING_PREV_CHX=前
+# ICON_PROGRAM_CHX=<img src="/screens/program_chx.gif" alt="图书馆活动">
+# ICON_RESOURCE_CHX=
+ICON_SAVEALLPAGE_CHX=<img src="/screens/saveallpage_chx.gif" alt="储存整页记录" class="button" />
+ICON_SAVEMARKED_CHX=<img src="/screens/savemarked_chx.gif" alt="储存注记记录" class="button" />
+NO_COPIES_CHX=目前没拷贝复印本可用
+SORT_BROWSE_CHX=t:标题|a:作者|c:年|r:反向年|n:索书号|m:资料种类
+BIB_TOC_HEADER_CHX=<strong>目录</strong>
+BUT_MARC_DISPLAY_CHX=/screens/marc_display_chx.gif
+BUT_REGULAR_DISPLAY_CHX=/screens/regular_display_chx.gif
+BUT_RTRNTB_CHX=/screens/rtrntb_chx.gif
+ICON_BIB_HOLDINGS_ITEMS_CHX=查看拷贝复印本
+# ICON_NEARBY_CHX=<img src="/screens/near_shelf_chx.gif" alt="附近书架上"/>
+ICON_BIB_PAGING_CAPTION_CHX=结果页 :
+ICON_BIB_PAGING_NEXT_CHX=<img src="/screens/bib_paging_next_chx.gif" class="button" alt="下一记录" />
+ICON_BIB_PAGING_PREV_CHX=<img src="/screens/bib_paging_prev_chx.gif" class="button" alt="前一记录" />
+ICON_RECORDLINK_CHX=<div class="bibRecordLink"><img src="/screens/permlink.gif" alt=""/>&nbsp;<a id="recordnum" href="%s">此记录书签链接</a></div>
+LINK856TEXT_CHX=接通
+BIB_LICENSE_FIELDS_CHX=允许:Vlw|限制:Vlx
+# BIB_LICENSE_FIELDS_BRIEF_CHX=
+BIB_RESOURCE_CAPTION_CHX=<strong>此标题可透过电子得到：</strong>
+BIB_RESOURCE_FIELDS_CHX=:VeT|:VeE|:Vek
+BIB_RESOURCE_FIELDS_BRIEF_CHX=:VcY|:Vch|:VeE
+BIB_RESOURCE_NUM_BRIEF_CHX=A
+ICON_BIB_RESOURCE_DETAILS_CHX=<img src="/screens/bib_resource_details_chx.gif" class="button" alt="全部细节" />
+ICON_RESOURCE_RECORD_CHX=<img src="/screens/resource_record_chx.gif" class="button" alt="关于此资源" />
+# ICON_VIEW_ADDITIONAL_ITEMS_CHX=<img src="/screens/view_additional_items_chx.gif" alt="查看额外项目" />
+RESOURCE_HOLDINGS_FIELDS_CHX=标题:VbT|报导:Vch|全文:VcY
+RESOURCE_LICENSE_FIELDS_CHX=允许 :Vlw|限制:Vlx|可用:Vlf|使用说明:Vla
+BUT_CARDFORM_BOX_CHX=/screens/cardform_box_chx.gif
+BUT_CARDFORM_LIN_CHX=/screens/cardform_lin_chx.gif
+CHECKIN_STATUS_CHX=抵达=此|预期=即将推出|裝書/已裝=正装书|迟=迟|其他=见馆员
+HOLDINGS_REQ_CHX=递交此篇文章给我
+MY_LISTS_CHX=true
+ICON_MYLISTS_CHX=<img src="/screens/my_lists_chx.gif" alt="我的列表" />
+ICON_MYLISTS_EXPORT_CHX=<img src="/screens/mylists_export_chx.gif" alt="输出我的列表" />
+ICON_MYLISTS_REQUEST_CHX=<img src="/screens/mylists_request_chx.gif" alt="要求" />
+ICON_MYLISTS_REMOVE_DUPLICATES_CHX=<img src="/screens/mylist_remove_duplicates_chx.gif" alt="消除已于借读历史中之标题" />
+ICON_MYLISTS_SAVE_CHX=<img src="/screens/mylists_save_chx.gif" alt="储存于我的列表" />
+ICON_MYLISTS_SAVE_TO_LIST_CHX=<img src="/screens/save_to_my_lists_chx.gif" alt="储存于我的列表"/>
+ICON_BACK_TO_MYLISTS_CHX=<img src="/screens/back_to_mylists_chx.gif" alt="回至列表" />
+BUT_BIBEXPORT_CHX=/screens/bibexport_chx.gif
+BUT_CLEAR_MARKED_CHX=/screens/clear_marked_chx.gif
+BUT_EXPORT_MULTI_CHX=/screens/export_multi_chx.gif
+BUT_EXPORT_VIEW_SAVES_CHX=/screens/export_view_saves_chx.gif
+BUT_VIEW_SAVES_CHX=/screens/view_saves_chx.gif
+BUT_REQUEST_CHX=/screens/request_chx.gif
+BUT_REQUEST_ALL_CHX=/screens/request_all_chx.gif
+BUT_REQUEST_MULTI_CHX=/screens/request_multi_chx.gif
+BUT_REQUEST_RESET_CHX=/screens/request_reset_chx.gif
+BUT_REQUEST_SELECTED_CHX=/screens/request_selected_chx.gif
+ICON_REQUEST_CHX=<img src="/screens/bullet.gif" alt="" style="margin-right:5px"/>要求
+# REQFILLTIME_CHX=14|<br />可利用要求约于 %d 天|<br />目前估计可用度: 约于 %d 天|<br />此资料也许立即可用
+REQUEST_CHX=保留此项目|bib|ask|Y
+# REQUEST_INSTRUCTION_CHX=请输入任何特别提示: 
+REQUEST_MULTI_CHX=预定书车内所有项目|bib|ask
+BUT_PAT_CANCEL_CHX=/screens/cancel_chx.gif
+BUT_PAT_CANCELALL_CHX=" style="display: none"
+BUT_PAT_CANCELMARK_CHX=/screens/pat_cancelmark_chx.gif
+BUT_PAT_CHKOUTS_CHX=/screens/pat_chkouts_chx.gif
+BUT_PAT_FINES_CHX=/screens/pat_fines_chx.gif
+BUT_PAT_HOLDS_CHX=/screens/pat_holds_chx.gif
+BUT_PAT_INFO_CHX=/screens/pat_info_chx.gif
+BUT_PAT_MSGS_CHX=/screens/pat_msgs_chx.gif
+BUT_PAT_PIN_CHX=/screens/pat_pin_chx.gif
+BUT_PAT_RENEWALL_CHX=/screens/pat_renewall_chx.gif
+BUT_PAT_RENEWMARK_CHX=/screens/pat_renewmark_chx.gif
+BUT_PAT_SORTBYCHKOUT_CHX=/screens/pat_sortbychkout_chx.gif
+BUT_PAT_SORTBYDUE_CHX=/screens/pat_sortbydue_chx.gif
+BUT_PAT_SUBMIT_CHX=/screens/pat_submit_chx.gif
+BUT_PSTARTOVER_CHX=/screens/startover_chx.gif
+BUT_RET2PREC_CHX=/screens/ret2prec_chx.gif
+BUT_UPDATE_HOLDS_CHX=/screens/pat_psearch_update_chx.gif
+ICON_CLOSEWINDOW_CHX=<img src="/screens/closewindow_chx.gif" class="button" alt="关闭视窗" />
+ICON_PAT_CANCELALL_CHX=<img src="/screens/pat_cancelall_chx.gif" class="button" alt="全取消" />
+ICON_PAT_CANCELMARK_CHX=<img src="/screens/pat_cancelmark_chx.gif" class="button" alt="取消选择" />
+ICON_PIN_RESET_CHX=<img src="/screens/forgot_your_pin_chx.gif" alt="忘记您的密码?"/>
+ICON_SORTPUDATE_CHX=<img src="/screens/sortpudate_chx.gif" class="button" alt="提取排序" />
+ICON_SORTREQDATE_CHX=<img src="/screens/sortreqdate_chx.gif" class="button" alt="预定排序" />
+NEWPIN_MSG_CHX=请输入个人密码[PIN]
+PATRON_MSG_CHX=z|来自图书馆之消息
+# PIN_RESET_EMAIL_CHX=要求重设您的图书馆个人密码[PIN]|于此处安{u63D2}图书馆寄出电邮|于此处安插图书馆回复电邮
+PSTARTOVER_CHX=/*chx
+# BUT_LOGOUT_CHX=/screens/logout_chx.gif "border="0" class="button" alt="
+BUT_PAT_PSEARCH_REMOVE_CHX=/screens/pat_psearch_remove_chx.gif
+BUT_PAT_PSEARCH_UPDATE_CHX=/screens/pat_psearch_update_chx.gif
+BUT_PAT_SEARCH_CHX=/screens/pat_search_chx.gif
+# BUT_PLOGOUT_CHX=/screens/ret2prec_chx.gif
+BUT_PAT_GETPSAVEDRECS_CHX=/screens/pat_getpsavedrecs_chx.gif 
+CIRC_HIST_LIMIT_TEXT_CHX=以不存在我的借读历史内之标题为限制
+ICON_PAT_DELETE_ALL_CHX=<img src="/screens/pat_delete_all_chx.gif" class="button" alt="全刪除" />
+ICON_PAT_DELETE_MARKED_CHX=<img src="/screens/pat_delete_marked_chx.gif" class="button" alt="删除已注记" />
+ICON_READING_HISTORY_CHX=<img src="/screens/reading_history_chx.gif" class="button" alt="我的借读历史" />
+ICON_READING_HISTORY_OPTIN_CHX=<img src="/screens/reading_history_optin_chx.gif" class="button" alt="启用借读历史" />
+ICON_READING_HISTORY_OPTOUT_CHX=<img src="/screens/reading_history_optout_chx.gif" class="button" alt="停用借读历史" />
+ICON_READING_HISTORY_EXPORT_CHX=<img src="/screens/export_readinglist_chx.gif" alt="输出我的借读目录"/> 
+LOGGEDIN_MSG_CHX=<span class="loggedInMessage">您已登入 %s 如 %s</span><br />
+PREFTEXT_CHX=作合宜搜索保存
+ICON_PATRATE_CHX=<img src="/screens/patrate_chx.gif" alt="我的评分" class="button" />
+ICON_RATE_GROUP_CHX=<img src="/screens/rate_group.gif" alt="投五星中之 %d 星于 %n 次的评级 " title="投五星中之 %d 星于 %n 次的评级 " />
+ICON_RATE_MY_CHX=<img src="/screens/rate_my.gif" alt="您已投五星中之 %d 星" title="您已投五星中之 %d 星" />
+ICON_RATE_NEED_CHX=<img src="/screens/rate_need.gif" alt="评级此资料!" title="评级此资料!" />
+ICON_RATE_NO_CHX=<img src="/screens/rate_no.gif" alt="此资料尚未被评级" title="此资料尚未被评级" />
+ICON_RATE_PAD_CHX=<img src="/screens/rate_pad.gif" alt="投五星中之 %d 星于 %n 次的评级 " title="投五星中之 %d 星于 %n 次的评级 " />
+CC_APPROVED_CHX=您的付款已批准。
+CC_DECLINED_CHX=抱歉。 您的付款已被拒绝。 请确认您的信息是否正确地输入或至图书馆支付。
+CC_EMAIL_RECEIPT_CHX=您的图书馆付款收据|nyplsierratest@nypl.org|nyplsierratest@nypl.org
+# DONATE_NOTIFY_CHX=新捐款已收|circadm@example.org|donormgmt@example.org
+ICON_PAY_CHX=<img src="/screens/pay_chx.gif" class="button" alt="网上付款" />
+ICON_PAY_CLEAR_ALL_CHX=<img src="/screens/clear_all_chx.gif" class="button" alt="全消除" />
+ICON_PAY_SELECT_ALL_CHX=<img src="/screens/select_all_chx.gif" class="button" alt="全选择" />
+ICON_PRINT_CHX=<img src="/screens/print_chx.gif" class="button" alt="打印" />
+# MINDONATE_CHX=1000|以便支付处理成本，最低捐款为十元。谢谢。
+PAYAMTS_CHX=101|请至图书馆支付此款项|00
+BOOKINGS_DAY_LEGEND_CHX=<span class="bookingsLegend">图书馆于 <span id="closed">X</span> 小时关门。无项目可提供 <span id="unavailable">灰色-无功能</span> 时间 。</span>
+BOOKINGS_MONTH_LEGEND_CHX=<span class="bookingsLegend">图书馆于 <span id="closed">X</span> 日关门。 无项目可提供 <span id="unavailable">灰色-无功能</span> 日期。</span>
+# BUT_PAT_BOOKING_CHX=/screens/pat_booking_chx.gif "border="0" class="button" alt="
+ICON_BOOKINGS_HEADER_CHX=<span class="bibBookingsHeader">预定此资料</span>
+ICON_DAILYCAL_CHX=查看日历 
+ICON_HOURLYCAL_CHX=查看小时日历
+ICON_NEXTCAL_CHX=后
+ICON_PREVCAL_CHX=前
+BUT_ILL_CANCEL_CHX=/screens/ill_cancel_chx.gif
+BUT_ILL_FORM_CHX=/screens/ill_form_chx.gif
+BUT_ILL_HOME_CHX=/screens/ill_home_chx.gif
+# BUT_PAT_ILL_CHX=/screens/pat_ill_chx.gif
+ILL_CONF_EMAIL_SUBJECT_CHX=图书馆Inter-library Loan预定通知
+BUT_RET2CRS_CHX=/screens/ret2crs_chx.gif "border="0" class="button" alt="
+# RSRV_HEADER_CHX=此课程资料
+# RSRV_HEADER_CHX=本月特写标题
+BUT_PREVSCRN_CHX=/screens/prevscrn_chx.gif "border="0" class="button" alt="
+BUT_RET2FEAT_CHX=/screens/ret2feat_chx.gif "border="0" class="button" alt="
+# FEATURED_LIST_CHX=01,02,03|专题馆藏/新书通告|类别|标题数目
+BIBIMAGE_TEXT_CHX=书本封面
+# BUT_ENCYCPD_CHX=/screens/encycpd_chx.gif
+BUT_FULL_TEXT_CHX=/screens/full_text_chx.gif
+BUT_CLOSEFRAME_CHX=/screens/closeframe_chx.gif
+BUT_RESOURCELINK_CHX=/screens/resourcelink_chx.gif
+BUT_RET2RESOURCE_CHX=/screens/ret2resource_chx.gif
+RESLINK_CHX=bibresourcetop|browseresourcetop||
+# WBHEADERTEXT_CHX=以下资源也许可执行额外信息有关于<br />#HEADER#
+PATFEED_PROGRAM_SESSION_SOON_CHX=您已注册之活动即将推出。 请登入您的读者帐户寻看活动日期，时间和地点。
+PATFEED_PROGRAM_SESSION_TOMORROW_CHX=您已注册之活动将于明天推出。 请登入您的读者帐户寻看活动日期，时间和地点。
+PATFEED_PROGRAM_SESSION_TODAY_CHX=您已注册之活动将于今天推出。 请登入您的读者帐户寻看活动日期，时间和地点。
+BUT_EMAIL_CHX=/screens/email_chx.gif
+BUT_NEXTREC_CHX=/screens/nextrec_chx.gif "border="0" class="button" alt="
+BUT_PREVREC_CHX=/screens/prevrec_chx.gif "border="0" class="button" alt="
+BUT_Z39_ANOTHER_CHX=/screens/z39_another_chx.gif "border="0" class="button" alt="
+BUT_Z39_REQUEST_CHX=/screens/request_chx.gif "border="0" class="button" alt="
+BUT_Z39SEARCH_CHX=/screens/z39search_chx.gif "border="0" class="button" alt="
+Z39BROADCAST_CHX=Z39.50播放搜索：请选择您需要的Z39.50服务器传送您的搜索
+BUT_RETHOME_CHX=/screens/rethome_chx.gif "border="0" class="button" alt="
+# SELFREG_ERROR_EMAIL_CHX=nyplsierratest@nypl.org|nyplsierratest@nypl.org|自我登记错误|nyplsierratest@nypl.org
+# SELFREG_INFO_EMAIL_CHX=nyplsierratest@nypl.org|nyplsierratest@nypl.org|新读者登记|nyplsierratest@nypl.org
+ICON_MFFAVS_HOME_CHX=&nbsp; &nbsp; <img src="/screens/mffavs_home.gif" alt="至Research Pro" />
+ICON_MFFAVS_SEARCH_CHX=<img src="/screens/mffavs_search_chx.gif" alt="搜索Research Pro" />
+ICON_PAT_MFFAVS_CHX=<img src="/screens/pat_mffavs_chx.gif" alt="我的Research Pro" />
+MFFAVS_CONFIRM_CHX=您的群组, %s, 已成功储备。
+MFFAVS_DENY_CHX=此功能不可提供。请联系图书馆馆员作进一步协助。
+# MFFAVS_HOME_CHX=http://researchpro-[SITECODE]:[端口]/iii/mfrpro-[SITECODE]/loadSearchPage.do?searchtype=simple&searchpage=simple&accountid=[帐户]&accountpassword=[帐户]&language=eng
+# MFFAVS_URL_CHX=true|[帐户]|[帐户]|/mfgo/http://researchpro-[SITECODE]:[端口]/iii/mfrpro-[SITECODE]/search.do
+ICON_SPELLCHECK_MORE_CHX=<span class="spellcheckToolMore">更多&nbsp;&raquo;</span>
+ICON_SPELLCHECK_SEARCH_CHX=<img src="/screens/go_but_chx.gif" class="button" alt="搜索">
+SPELLCHECK_CHX=<span class="spellcheckTool">您是否搜索 %a? %s </span>
+MF_BOTLOGO_CHX=@screens/MFbotlogo_chx.html
+MF_EMAIL_SENDER_CHX=researchpro@iii.com
+MF_ICON_ADVANCED_SEARCH_CHX=<img src="/screens/advancedsearch_chx.gif" alt="高级搜索" class="button" />
+MF_ICON_CLEAR_CHX=<img src="/screens/request_reset_chx.gif" alt="清表" class="button" />
+MF_ICON_CLOSE_CHX=<img src="/screens/closewindow_chx.gif" alt="关闭视窗" class="mfButton" />
+MF_ICON_DESELECTALL_CHX=<img src="/screens/pay_clear_all_chx.gif" class="button" alt="全消除" />
+MF_ICON_EMAIL_CHX=<img src="/screens/email_chx.gif" class="mfButton" alt="电邮" title="email"/>
+MF_ICON_HELP_CHX=<img src="/screens/help_chx.gif" alt="帮助 " class="button" />
+MF_ICON_LOGOFFACCOUNT_CHX=<img src="/screens/logout_chx.gif" alt="登出" class="button" />
+MF_ICON_MFFAVS_GROUP_CHX=<img src="/screens/mf_mfavs_group_chx.gif" class="button" alt="储存群组">
+MF_ICON_PATRON_REC_CHX=<img src="/screens/ret2prec_chx.gif" class="button" alt="返回至读者记录" />
+MF_ICON_NEW_SEARCH_CHX=<img src="/screens/newsrch_chx.gif" class="button" alt="新搜索" />
+MF_ICON_PRINT_CHX=<img src="/screens/print_chx.gif" class="button" alt="打印" />
+MF_ICON_RET2CAT_CHX=<img src="/screens/ret2cat_chx.gif" class="button" alt="回至目录" />
+MF_ICON_SEARCH_CHX=<img src="/screens/search_research_pro_chx.gif" alt="搜索Research Pro" class="button"/>
+MF_ICON_SELECTALL_CHX=<img src="/screens/pay_select_all_chx.gif" class="button" alt="全选择" />
+MF_ICON_SIMPLE_SEARCH_CHX=<img src="/screens/simplesearch_chx.gif" alt="简易搜索" class="button" />
+MF_ICON_UPDATELIST_CHX=<img src="/screens/updatelist_chx.gif" alt="更新列表" />
+MF_ICON_VIEWSAVED_CHX=<img src="/screens/view_saves_chx.gif" alt="查看储存" class="mfButton"/>
+MF_RESULTSVIEW_CHX=tabbed,以资源为选项卡式查看结果|standard,查看全部已入档案之结果
+MF_RETURN_URL_CHX=http://researchpro-[SITECODE]:[端口]/iii/mfrpro-[SITECODE]/loadSearchPage.do?searchtype=simple&searchpage=simple&accountid=[帐户]&accountpassword=[帐户]
+MF_SEARCHINDEX_CHX=Keywords,关键字|:CREATOR,作者|:TITLE,标题|:SUBJECT,主题
+MF_STYLESHEET_CHX=/screens/styles_mf.css
+MF_TOPLOGO_CHX=@screens/MFtoplogo_chx.html
+PROGRAM_SECTION_FIELDS_CHX=日期/时间:VsT|会见:Vss|地点:Fs285|讲师:Vsn|Status:VsS
+# BUT_PAT_PROGRAMS_CHX=
+# BUT_PAT_SORTBYDATE_CHX=sortby_date_chx.gif "border="0" class="button" alt="
+BUT_PAT_SORTBYNAME_CHX=sortby_name_chx.gif
+# BUT_RET2PROG_CHX=
+ICON_REGISTER_CHX=<br><strong>轻按此处注册</strong>
+ICON_ADD_TO_WAITLIST_CHX=<br><strong>加进候补单</strong>
+ICON_VIEW_ADDITIONAL_SESSIONS_CHX=<img src="/screens/view_additional_sessions_chx.gif" alt="查看额外会议">
+ICON_HIDE_ADDITIONAL_SESSIONS_CHX=<img src="/screens/hide_additional_sessions_chx.gif" alt="隐藏额外会议">
+# ICON_PROGRAM_CAL_CHX=<img src="/screens/program_cal_chx.gif" alt="活动日历">
+
+
+# Russian Language Web Options
+
+AVAILLIM_RUS=<span class="availLimMessage">Ограничить поиск экземплярами в наличии</span>|<span class="availLimMessage">Результаты поиска, ограниченного экземплярами в наличии</span>
+BOTLOGO_RUS=@screens/botlogo_rus.html
+BUT_CANCEL_RUS=/screens/cancel_rus.gif
+BUT_CLOSEWINDOW_RUS=/screens/closewindow_rus.gif
+BUT_CLOSEWN_RUS=/screens/closewn_rus.gif
+BUT_RET2CAT_RUS=/screens/ret2cat_rus.gif" border="0" class="button" alt="
+BUT_STARTOVER_RUS=/screens/startover_rus.gif" border="0" class="button" alt="
+BUT_SUBMIT_RUS=/screens/submit_rus.gif "border="0" class="button" alt="
+ICON_CANCEL_RUS=<img src="/screens/cancel_rus.gif" alt="Отменить" class="button" />
+ICON_OK_RUS=<img src="/screens/ok_rus.gif" class="button" alt="OK" />
+ICON_PREVPAGE_RUS=<img src="/screens/prevscrn_rus.gif" class="button" alt="Предыдущий" />
+ICON_SUBMIT_RUS=<img src="/screens/submit_rus.gif" alt="Отправить" class="button" />
+ICON_UPDATELIST_RUS=<img src="/screens/updatelist_rus.gif" alt="Обновить Лист" class="button" />
+ICON_CLEAR_ALL_RUS=<img src="/screens/clear_all_rus.gif" alt="Очистить все"/>
+ICON_CLEAR_FORM_RUS=<img src="/screens/clear_form_icon_rus.gif" alt="Очистить Форму"/>
+ICON_DELETE_SELECTED_RUS=<img src="/screens/delete_selected_rus.gif" alt="Удалить Выбранное"/>
+ICON_SELECT_ALL_RUS=<img src="/screens/save_all_rus.gif" alt="Сохранить все"/>
+INSERTTAG_INHEAD_RUS=<script type="text/javascript" src="/screens/bibdisplay.js"></script>
+RESOURCETABLE_RUS=valign="top"|cellpadding="0" cellspacing="0"||Где-либо
+STARTOVER_RUS=/search*rus
+TOPLOGO_RUS=@screens/toplogo_rus.html
+XSTARTOVER_RUS=/*rus
+BUT_PUBLIC_RUS=/screens/public_rus.gif
+BUT_STAFF_RUS=/screens/staff_rus.gif
+STAFF_LOGGEDIN_MSG_RUS=<span class="loggedInMessage">Вы вошли в систему для сотрудников %s как %s</span>
+BUT_ANOTHER_RUS=/screens/another_rus.gif 
+BUT_NEWSRCH_RUS=/screens/startover_rus.gif
+BUT_WORDSRCH_RUS=/screens/wordsrch_rus.gif
+BUT_MODIFY_RUS=/screens/modify_rus.gif "border="0" class="button" alt="
+BUT_SHOWSIM_RUS=/screens/showsim_rus.gif "border="0" class="button" alt="
+ICON_REL_GROUP_1_RUS=<img src="/screens/relevance5.gif" alt="Наивысшей степени релевантности">&nbsp;Наивысшей степени релевантности заголо{u0432}ки&nbsp;
+ICON_REL_GROUP_2_RUS=<img src="/screens/relevance4.gif" alt="Чрезвычайно релевантные">&nbsp;Чрезвычайно релевантные заголовки&nbsp;
+ICON_REL_GROUP_3_RUS=<img src="/screens/relevance3.gif" alt="Очень релевантные">&nbsp;Очень релевантные заголовки&nbsp;
+ICON_REL_GROUP_4_RUS=<img src="/screens/relevance2.gif" alt="Релевантный">&nbsp;Релевантный заголовки&nbsp;
+ICON_REL_GROUP_5_RUS=<img src="/screens/relevance1.gif" alt="Прочие релевантные">&nbsp;Прочие релевантные заголовки&nbsp;
+# ICON_AWS_BYRELEVANCE_LINK_RUS=
+# ICON_AWS_BYDATE_LINK_RUS=
+# ICON_AWS_BYTITLE_LINK_RUS=
+RELSEARCH_RUS=searchtool||<img src="/screens/relsearch_rus.gif" class="button" alt="Смотри Похожие Поиски" />
+AUTHMSG_RUS=<em>%u</em> -- См. %w <strong>%a</strong> <span class="authPublicNote">%p</span>|%u -- Также См. %w %a <span class="authPublicNote">%p</span>
+AUTHMSG_SR_RUS=aпоследующие рубрики|bпредыдущие рубрики|dполная форма рубрики|fмузыкальное произведение, основанное на этой работе|gболее точный термин|hболее общий термин
+BROWSE_HEADERS_RUS=Отметьте|Медиа
+BUT_BRIEF_RUS=/screens/brief_rus.gif
+BUT_EXTENDED_RUS=/screens/extended_rus.gif
+BUT_LIMAVAIL_RUS=/screens/limavail_rus.gif
+BUT_LIMIT_RUS=/screens/limit_rus.gif
+BUT_UNLIMAVAIL_RUS=/screens/unlimavail_rus.gif
+# ICON_BOOKCART_RUS=<img src="/screens/bookcart_rus.gif" alt="Book Cart" class="button" />
+ICON_BOOKCART_SAVED_RUS=<img src="/screens/bookcart_saved_rus.gif" alt="In Book Cart" class="button" />
+ICON_FULLRECORD_RUS=<img src="/screens/viewfullrecord.gif" alt="Просмотрите полную запись" class="button" /> Смотрите Полную Запись
+ICON_LOCATEINRESULTS_RUS=<img src="/screens/locateinresults_rus.gif" alt="Найдите в результатах" class="button" />
+ICON_PAGING_CAPTION_RUS=Страница результатов&nbsp;
+ICON_PAGING_NEXT_RUS=Следующий
+ICON_PAGING_PREV_RUS=Пред.
+# ICON_PROGRAM_RUS=
+# ICON_PROGRAM_RUS=<img src="/screens/program_rus.gif" alt="Библиотечное Мероприятие">
+# ICON_RESOURCE_RUS=
+ICON_SAVEALLPAGE_RUS=<img src="/screens/saveallpage_rus.gif" alt="Сохранить все на странице" class="button" />
+ICON_SAVEMARKED_RUS=<img src="/screens/savemarked_rus.gif" alt="Сохранить отмеченные записи" class="button" />
+NO_COPIES_RUS=В данный момент нет свободных экземпляров
+SORT_BROWSE_RUS=t:Наименование|a:Автор|c:Год|r:Года в обратном порядке|n:Шифр Хранения|m:Вид Материала
+BIB_TOC_HEADER_RUS=<strong>Оглавление</strong>
+BUT_MARC_DISPLAY_RUS=/screens/marc_display_rus.gif
+BUT_REGULAR_DISPLAY_RUS=/screens/regular_display_rus.gif
+BUT_RTRNTB_RUS=/screens/rtrntb_rus.gif
+ICON_BIB_HOLDINGS_ITEMS_RUS=Просмотрите экземпляры
+# ICON_NEARBY_RUS=<img src="/screens/near_shelf_rus.gif" alt="Рядом на полке"/>
+ICON_BIB_PAGING_CAPTION_RUS=Страница с результатами:
+ICON_BIB_PAGING_NEXT_RUS=<img src="/screens/bib_paging_next_rus.gif" class="button" alt="Следующая запись" />
+ICON_BIB_PAGING_PREV_RUS=<img src="/screens/bib_paging_prev_rus.gif" class="button" alt="Предыдущая запись" />
+ICON_RECORDLINK_RUS=<div class="bibRecordLink"><img src="/screens/permlink.gif" alt=""/>&nbsp;<a id="recordnum" href="%s">Электронная закладка для этой записи</a></div>
+LINK856TEXT_RUS=Подключиться к
+BIB_LICENSE_FIELDS_RUS=Разрешено:Vlw|Запрещено:Vlx
+# BIB_LICENSE_FIELDS_BRIEF_RUS=
+BIB_RESOURCE_CAPTION_RUS=<strong>Это наименование доступно в электронном формате через:</strong>
+BIB_RESOURCE_FIELDS_RUS=:VeT|:VeE|:Vek
+BIB_RESOURCE_FIELDS_BRIEF_RUS=:VcY|:Vch|:VeE
+BIB_RESOURCE_NUM_BRIEF_RUS=A
+ICON_BIB_RESOURCE_DETAILS_RUS=<img src="/screens/bib_resource_details_rus.gif" class="button" alt="Все детали" />
+ICON_RESOURCE_RECORD_RUS=<img src="/screens/resource_record_rus.gif" class="button" alt="Об Этом Источнике" />
+# ICON_VIEW_ADDITIONAL_ITEMS_RUS=<img src="/screens/view_additional_items_rus.gif" alt="Дополнительные экземпляры" />
+RESOURCE_HOLDINGS_FIELDS_RUS=Наименование:VbT|Содержание:Vch|Полный Текст:VcY
+RESOURCE_LICENSE_FIELDS_RUS=Доступно:Vlw|Ограничено:Vlx|Доступно для:Vlf|Детали доступа:Vla
+BUT_CARDFORM_BOX_RUS=/screens/cardform_box_rus.gif
+BUT_CARDFORM_LIN_RUS=/screens/cardform_lin_rus.gif 
+CHECKIN_STATUS_RUS=ПОЛУЧЕНО=Здесь|ОЖИДАЕТСЯ=Ожидается вскорости|В ПЕРЕПЛЕТ/ПЕРЕПЛЕТЕНО=В переплете|ОПАЗДЫВАЕТ=Опаздывает|Прочие=Обратитесь к сотруднику
+HOLDINGS_REQ_RUS=Отправьте эту статью мне
+MY_LISTS_RUS=true
+ICON_MYLISTS_RUS=<img src="/screens/my_lists_rus.gif" alt="Мои Списки" />
+ICON_MYLISTS_EXPORT_RUS=<img src="/screens/mylists_export_rus.gif" alt="Экспортировать Мой Список" />
+ICON_MYLISTS_REQUEST_RUS=<img src="/screens/mylists_request_rus.gif" alt="Забронировать" />
+ICON_MYLISTS_REMOVE_DUPLICATES_RUS=<img src="/screens/mylist_remove_duplicates_rus.gif" alt="Удалить заглавия, уже находящиеся в списке прочитанной литературы" />
+ICON_MYLISTS_SAVE_RUS=<img src="/screens/mylists_save_rus.gif" alt="Сохранить в Моих Списках" />
+ICON_MYLISTS_SAVE_TO_LIST_RUS=<img src="/screens/save_to_my_lists_rus.gif" alt="Сохранить в Моих Списках"/>
+ICON_BACK_TO_MYLISTS_RUS=<img src="/screens/back_to_mylists_rus.gif" alt="Вернуться к Спискам" />
+BUT_BIBEXPORT_RUS=/screens/bibexport_rus.gif
+BUT_CLEAR_MARKED_RUS=/screens/clear_marked_rus.gif
+BUT_EXPORT_MULTI_RUS=/screens/export_multi_rus.gif
+BUT_EXPORT_VIEW_SAVES_RUS=/screens/export_view_saves_rus.gif
+BUT_VIEW_SAVES_RUS=/screens/view_saves_rus.gif
+BUT_REQUEST_RUS=/screens/request_rus.gif
+BUT_REQUEST_ALL_RUS=/screens/request_all_rus.gif
+BUT_REQUEST_MULTI_RUS=/screens/request_multi_rus.gif
+BUT_REQUEST_RESET_RUS=/screens/request_reset_rus.gif
+BUT_REQUEST_SELECTED_RUS=/screens/request_selected_rus.gif
+ICON_REQUEST_RUS=<img src="/screens/bullet.gif" alt="" style="margin-right:5px"/>Забронировать
+# REQFILLTIME_RUS=14|<br />Забронировать имеющиеся в наличии примерно %d дни|<br />Ожидается быть в наличии приблизительно:  %d дни|<br />Этот материал может быть доступен сразу же
+REQUEST_RUS=Забронировать этот экземпляр|bib|ask|Y
+# REQUEST_INSTRUCTION_RUS=Пожалуйста, если необходимо, введите специальные указания: 
+REQUEST_MULTI_RUS=Забронировать все материалы в Корзине|bib|ask
+BUT_PAT_CANCEL_RUS=/screens/cancel_rus.gif
+BUT_PAT_CANCELALL_RUS=" style="display: none"
+BUT_PAT_CANCELMARK_RUS=/screens/pat_cancelmark_rus.gif
+BUT_PAT_CHKOUTS_RUS=/screens/pat_chkouts_rus.gif
+BUT_PAT_FINES_RUS=/screens/pat_fines_rus.gif
+BUT_PAT_HOLDS_RUS=/screens/pat_holds_rus.gif
+BUT_PAT_INFO_RUS=/screens/pat_info_rus.gif
+BUT_PAT_MSGS_RUS=/screens/pat_msgs_rus.gif
+BUT_PAT_PIN_RUS=/screens/pat_pin_rus.gif
+BUT_PAT_RENEWALL_RUS=/screens/pat_renewall_rus.gif
+BUT_PAT_RENEWMARK_RUS=/screens/pat_renewmark_rus.gif
+BUT_PAT_SORTBYCHKOUT_RUS=/screens/pat_sortbychkout_rus.gif
+BUT_PAT_SORTBYDUE_RUS=/screens/pat_sortbydue_rus.gif
+BUT_PAT_SUBMIT_RUS=/screens/pat_submit_rus.gif
+BUT_PSTARTOVER_RUS=/screens/startover_rus.gif
+BUT_RET2PREC_RUS=/screens/ret2prec_rus.gif
+BUT_UPDATE_HOLDS_RUS=/screens/pat_psearch_update_rus.gif
+ICON_CLOSEWINDOW_RUS=<img src="/screens/closewindow_rus.gif" class="button" alt="Закрыть Окно" />
+ICON_PAT_CANCELALL_RUS=<img src="/screens/pat_cancelall_rus.gif" class="button" alt="Отменить все" />
+ICON_PAT_CANCELMARK_RUS=<img src="/screens/pat_cancelmark_rus.gif" class="button" alt="Отменить Выбранные" />
+ICON_PIN_RESET_RUS=<img src="/screens/forgot_your_pin_rus.gif" alt="Forget Your PIN?"/>
+ICON_SORTPUDATE_RUS=<img src="/screens/sortpudate_rus.gif" class="button" alt="Отсортиров{u0430}ть по месту выдачи" />
+ICON_SORTREQDATE_RUS=<img src="/screens/sortreqdate_rus.gif" class="button" alt="Отсортировать по броне" />
+NEWPIN_MSG_RUS=Пожалуйста, введите Личный Идентификационый Номер (PIN)
+PATRON_MSG_RUS=z|Сообщение из библиотеки
+# PIN_RESET_EMAIL_RUS=Запросите новый библиотечный пароль (PIN)|ВСТАВЬТЕ БИБЛИОТЕКУ ИЗ EMAIL ТУТ|ВСТАВЬТЕ БИБЛИОТЕЧНЫЙ EMAIL ДЛЯ ОТВЕТА ТУТ
+PSTARTOVER_RUS=/*rus
+# BUT_LOGOUT_RUS=/screens/logout_rus.gif "border="0" class="button" alt="
+BUT_PAT_PSEARCH_REMOVE_RUS=/screens/pat_psearch_remove_rus.gif
+BUT_PAT_PSEARCH_UPDATE_RUS=/screens/pat_psearch_update_rus.gif
+BUT_PAT_SEARCH_RUS=/screens/pat_search_rus.gif
+# BUT_PLOGOUT_RUS=/screens/ret2prec_rus.gif
+BUT_PAT_GETPSAVEDRECS_RUS=/screens/pat_getpsavedrecs_rus.gif
+CIRC_HIST_LIMIT_TEXT_RUS=только заглавия, не находящиеся в списке Моей Прочитанной Литературы
+ICON_PAT_DELETE_ALL_RUS=<img src="/screens/pat_delete_all_rus.gif" class="button" alt="Удалить все" />
+ICON_PAT_DELETE_MARKED_RUS=<img src="/screens/pat_delete_marked_rus.gif" class="button" alt="Удалить Отмеченное" />
+ICON_READING_HISTORY_RUS=<img src="/screens/reading_history_rus.gif" class="button" alt="Мой Список Прочитанной Литературы" />
+ICON_READING_HISTORY_OPTIN_RUS=<img src="/screens/reading_history_optin_rus.gif" class="button" alt="Записаться" />
+ICON_READING_HISTORY_OPTOUT_RUS=<img src="/screens/reading_history_optout_rus.gif" class="button" alt="Выйти" />
+ICON_READING_HISTORY_EXPORT_RUS=<img src="/screens/export_readinglist_rus.gif" alt="Экспортировать Мой Список Литературы"/> 
+LOGGEDIN_MSG_RUS=<span class="loggedInMessage">Вы вошли в систему %s как %s</span><br />
+PREFTEXT_RUS=Сохранить как Предпочтительный Поиск
+ICON_PATRATE_RUS=<img src="/screens/patrate_rus.gif" alt="Мои Рейтинги" class="button" />
+ICON_RATE_GROUP_RUS=<img src="/screens/rate_group.gif" alt="Оценка произведена %d звездочек из 5 на основании %n рейтингов" title="Оценка произведена %d звездочек из 5 на основании %n рейтингов" />
+ICON_RATE_MY_RUS=<img src="/screens/rate_my.gif" alt="Вы оценили эту %d звездочек из 5" title="Вы оценили эту %d звездочек из 5" />
+ICON_RATE_NEED_RUS=<img src="/screens/rate_need.gif" alt="Оцените этот материал!" title="Оцените этот материал!" />
+ICON_RATE_NO_RUS=<img src="/screens/rate_no.gif" alt="Никто еще не поставил оценку этому материалу" title="Никто еще не поставил оценку этому материалу" />
+ICON_RATE_PAD_RUS=<img src="/screens/rate_pad.gif" alt="Оценка произведена %d звездочек из 5 на основании %n рейтингов" title="Оценка произведена %d звездочек из 5 на основании %n рейтингов" />
+CC_APPROVED_RUS=Ваш платеж подтвержден.
+CC_DECLINED_RUS=Извите. Ваш платеж не прошел. Пожалуйста, убедитесь в том, что Вы ввели правильную информацию, или заплатите в библиотеке.
+CC_EMAIL_RECEIPT_RUS=Квитанция об опла{u0442}е в библиотеку|nyplsierratest@nypl.org|nyplsierratest@nypl.org
+# DONATE_NOTIFY_RUS=Новый дар получен.|circadm@example.org|donormgmt@example.org
+ICON_PAY_RUS=<img src="/screens/pay_rus.gif" class="button" alt="Заплатить Онлайн" />
+ICON_PAY_CLEAR_ALL_RUS=<img src="/screens/clear_all_rus.gif" class="button" alt="Очистить все" />
+ICON_PAY_SELECT_ALL_RUS=<img src="/screens/select_all_rus.gif" class="button" alt="Выбрать Все" />
+ICON_PRINT_RUS=<img src="/screens/print_rus.gif" class="button" alt="Распечатать" />
+# MINDONATE_RUS=1000|Чтобы покрыть расходы на оформление, денежные пожертвования должны быть не меньше $10. Спасибо.
+PAYAMTS_RUS=101|Пожалуйста, оплатите эту сумму в библиотеке|00
+BOOKINGS_DAY_LEGEND_RUS=<span class="bookingsLegend">Библиотека закрыта <span id="closed">X</span> часы. Выдача книг не производится <span id="unavailable">в недоступные в календаре</span> часы.</span>
+BOOKINGS_MONTH_LEGEND_RUS=<span class="bookingsLegend">Библиотека закрыта <span id="closed">X</span> дни. Выдача книг не производится  <span id="unavailable">в недоступные в календаре</span> дни.</span>
+# BUT_PAT_BOOKING_RUS=/screens/pat_booking_rus.gif "border="0" class="button" alt="
+ICON_BOOKINGS_HEADER_RUS=<span class="bibBookingsHeader">Зарезервировать этот материал</span>
+ICON_DAILYCAL_RUS=Расписание по дням
+ICON_HOURLYCAL_RUS=Просмотрите Почасовое Расписание 
+ICON_NEXTCAL_RUS=Следующий
+ICON_PREVCAL_RUS=Предыдущий
+BUT_ILL_CANCEL_RUS=/screens/ill_cancel_rus.gif
+BUT_ILL_FORM_RUS=/screens/ill_form_rus.gif
+BUT_ILL_HOME_RUS=/screens/ill_home_rus.gif
+# BUT_PAT_ILL_RUS=/screens/pat_ill_rus.gif
+ILL_CONF_EMAIL_SUBJECT_RUS=Уведомление о межбиблиотечном запросе
+BUT_RET2CRS_RUS=/screens/ret2crs_rus.gif "border="0" class="button" alt="
+# RSRV_HEADER_RUS=Материал для этого Курса
+# RSRV_HEADER_RUS=Избранные Наименования Этого Месяца
+BUT_PREVSCRN_RUS=/screens/prevscrn_rus.gif "border="0" class="button" alt="
+BUT_RET2FEAT_RUS=/screens/ret2feat_rus.gif "border="0" class="button" alt="
+# FEATURED_LIST_RUS=01,02,03|ИЗБРАННЫЕ СПИСКИ|КАТЕГОРИЯ|# Наименований
+BIBIMAGE_TEXT_RUS=Обложка книги
+# BUT_ENCYCPD_RUS=/screens/encycpd_rus.gif
+BUT_FULL_TEXT_RUS=/screens/full_text_rus.gif
+BUT_CLOSEFRAME_RUS=/screens/closeframe_rus.gif
+BUT_RESOURCELINK_RUS=/screens/resourcelink_rus.gif
+BUT_RET2RESOURCE_RUS=/screens/ret2resource_rus.gif
+RESLINK_RUS=bibresourcetop|browseresourcetop||
+# WBHEADERTEXT_RUS=Нижеследующие ресурсы могут предоставить Вам дополнительную информацию<br />#ЗАГОЛОВОК#
+PATFEED_PROGRAM_SESSION_SOON_RUS=Срок мероприятия, на которое Вы зарегестрировались, скоро подходит. Пожалуйста, зайдите в Мой Абонемент, чтобы узнать дату мероприятия, время и место его проведения.
+PATFEED_PROGRAM_SESSION_TOMORROW_RUS=Мероприятие, на которое Вы зарегестрировались, состоится завтра. Пожалуйста, зайдите в Мой Абонемент, чтобы узнать дату мероприятия, время и место {u0435}го проведения.
+PATFEED_PROGRAM_SESSION_TODAY_RUS=Мероприятие, на которое Вы зарегестрировались, состоится сегодня. Пожалуйста, зайдите в Мой Абонемент, чтобы узнать дату мероприятия, время и место его проведения.
+BUT_EMAIL_RUS=/screens/email_rus.gif
+BUT_NEXTREC_RUS=/screens/nextrec_rus.gif "border="0" class="button" alt="
+BUT_PREVREC_RUS=/screens/prevrec_rus.gif "border="0" class="button" alt="
+BUT_Z39_ANOTHER_RUS=/screens/z39_another_rus.gif "border="0" class="button" alt="
+BUT_Z39_REQUEST_RUS=/screens/request_rus.gif "border="0" class="button" alt="
+BUT_Z39SEARCH_RUS=/screens/z39search_rus.gif "border="0" class="button" alt="
+Z39BROADCAST_RUS=Z39.50 Поиск Широкого Разброса:Пожалуйста, выберите серверы Z39.50, куда Вы намереваетесь заслать Ваш запрос
+BUT_RETHOME_RUS=/screens/rethome_rus.gif "border="0" class="button" alt="
+# SELFREG_ERROR_EMAIL_RUS=nyplsierratest@nypl.org|nyplsierratest@nypl.org|Ошибка в саморегистрации|nyplsierratest@nypl.org
+# SELFREG_INFO_EMAIL_RUS=nyplsierratest@nypl.org|nyplsierratest@nypl.org|Регистрация Нового Пользователя Библиотеки|nyplsierratest@nypl.org
+ICON_MFFAVS_HOME_RUS=&nbsp; &nbsp; <img src="/screens/mffavs_home.gif" alt="Перейти в Профи-Исследователь (Research Pro)" />
+ICON_MFFAVS_SEARCH_RUS=<img src="/screens/mffavs_search_rus.gif" alt="Поиск в Профи-Исследователе (Research Pro)" />
+ICON_PAT_MFFAVS_RUS=<img src="/screens/pat_mffavs_rus.gif" alt="Мой Профи-Исследователь (Research Pro)" />
+MFFAVS_CONFIRM_RUS=Ваша группа, %s, обновлена успешно.
+MFFAVS_DENY_RUS=Операция не возможна. Обратитесь за помощью к библиотекарю.
+# MFFAVS_HOME_RUS=http://researchpro-[КОД ОРГАНИЗАЦИИ]:[ПОРТ]/iii/mfrpro-[КОД ОРГАНИЗАЦИИ]/loadSearchPage.do?searchtype=simple&searchpage=simple&accountid=[ПОДРАЗДЕЛЕНИЕ]&accountpassword=[ПОДРАЗДЕЛЕНИЕ]&language=eng
+# MFFAVS_URL_RUS=true|[ПОДРАЗДЕЛЕНИЕ]|[ПОДРАЗДЕЛЕНИЕ]|/mfgo/http://researchpro-[КОД ОРГАНИЗАЦИИ]:[ПОРТ]/iii/mfrpro-[КОД ОРГАНИЗАЦИИ]/search.do
+ICON_SPELLCHECK_MORE_RUS=<span class="spellcheckToolMore">больше&nbsp;&raquo;</span>
+ICON_SPELLCHECK_SEARCH_RUS=<img src="/screens/go_but_rus.gif" class="button" alt="Поиск">
+SPELLCHECK_RUS=<span class="spellcheckTool">Вы подразумевали %a? %s </span>
+MF_BOTLOGO_RUS=@screens/MFbotlogo_rus.html
+MF_EMAIL_SENDER_RUS=researchpro@iii.com
+MF_ICON_ADVANCED_SEARCH_RUS=<img src="/screens/advancedsearch_rus.gif" alt="Расширенный Поиск" class="button" />
+MF_ICON_CLEAR_RUS=<img src="/screens/request_reset_rus.gif" alt="Очистить Форму" class="button" />
+MF_ICON_CLOSE_RUS=<img src="/screens/closewindow_rus.gif" alt="Закрыть Окно" class="mfButton" />
+MF_ICON_DESELECTALL_RUS=<img src="/screens/pay_clear_all_rus.gif" class="button" alt="Очистить все" />
+MF_ICON_EMAIL_RUS=<img src="/screens/email_rus.gif" class="mfButton" alt="Электронная почта" title="email"/>
+MF_ICON_HELP_RUS=<img src="/screens/help_rus.gif" alt="Помощь" class="button" />
+MF_ICON_LOGOFFACCOUNT_RUS=<img src="/screens/logout_rus.gif" alt="Выход" class="button" />
+MF_ICON_MFFAVS_GROUP_RUS=<img src="/screens/mf_mfavs_group_rus.gif" class="button" alt="Сохранить группу">
+MF_ICON_PATRON_REC_RUS=<img src="/screens/ret2prec_rus.gif" class="button" alt="Вернуться в Читательский Абонемент" />
+MF_ICON_NEW_SEARCH_RUS=<img src="/screens/newsrch_rus.gif" class="button" alt="Новый Поиск" />
+MF_ICON_PRINT_RUS=<img src="/screens/print_rus.gif" class="button" alt="Распечатать" />
+MF_ICON_RET2CAT_RUS=<img src="/screens/ret2cat_rus.gif" class="button" alt="Вернуться в Каталог" />
+MF_ICON_SEARCH_RUS=<img src="/screens/search_research_pro_rus.gif" alt="Поиск  в Исследователе-Профи (Research Pro)" class="button"/>
+MF_ICON_SELECTALL_RUS=<img src="/screens/pay_select_all_rus.gif" class="button" alt="Выбрать Все" />
+MF_ICON_SIMPLE_SEARCH_RUS=<img src="/screens/simplesearch_rus.gif" alt="Обычный Поиск" class="button" />
+MF_ICON_UPDATELIST_RUS=<img src="/screens/updatelist_rus.gif" alt="Обновить Лист" />
+MF_ICON_VIEWSAVED_RUS=<img src="/screens/view_saves_rus.gif" alt="Просмотр Сохраненных Записей" class="mfButton"/>
+MF_RESULTSVIEW_RUS=tabbed,Просмотрите результаты с ярлычками Источника|standard,Просмотрите Все Результаты вперемешку
+MF_RETURN_URL_RUS=http://researchpro-[КОД ОРГАНИЗАЦИИ]:[ПОРТ]/iii/mfrpro-[КОД ОРГАНИЗАЦИИ]/loadSearchPage.do?searchtype=simple&searchpage=simple&accountid=[ПОДРАЗДЕЛЕНИЕ]&accountpassword=[ПОДРАЗДЕЛЕНИЕ]
+MF_STYLESHEET_RUS=/screens/styles_mf.css
+MF_TOPLOGO_RUS=@screens/MFtoplogo_rus.html
+PROGRAM_SECTION_FIELDS_RUS=Дата/Время:VsT|Собирается:Vss|Место встречи:Fs285|Преподаватель:Vsn|Status:VsS
+# BUT_PAT_PROGRAMS_RUS=
+# BUT_PAT_SORTBYDATE_RUS=sortby_date_rus.gif "border="0" class="button" alt="
+BUT_PAT_SORTBYNAME_RUS=sortby_name_rus.gif
+# BUT_RET2PROG_RUS=
+ICON_REGISTER_RUS=<br><strong>Нажмите для регистрации</strong>
+ICON_ADD_TO_WAITLIST_RUS=<br><strong>Внести в Список ожидающих очереди</strong>
+ICON_VIEW_ADDITIONAL_SESSIONS_RUS=<img src="/screens/view_additional_sessions_rus.gif" alt="Просмотрите Дополнительные Сессии">
+ICON_HIDE_ADDITIONAL_SESSIONS_RUS=<img src="/screens/hide_additional_sessions_rus.gif" alt="Не показывать дополнительные сессии">
+# ICON_PROGRAM_CAL_RUS=<img src="/screens/program_cal_rus.gif" alt="Расписание Мероприятий">
+
+
+# Spanish Language Web Options
+
+AVAILLIM_SPI=<span class="availLimMessage">Limitar la búsqueda a ejemplares disponibles</span>|<span class="availLimMessage">Resultados de la búsqueda limitados a ejemplares disponibles</span>
+BOTLOGO_SPI=@screens/botlogo_spi.html
+BUT_CANCEL_SPI=/screens/cancel_spi.gif
+BUT_CLOSEWINDOW_SPI=/screens/closewindow_spi.gif
+BUT_CLOSEWN_SPI=/screens/closewn_spi.gif
+BUT_RET2CAT_SPI=/screens/ret2cat_spi.gif" border="0" class="button" alt="
+BUT_STARTOVER_SPI=/screens/startover_spi.gif" border="0" class="button" alt="
+BUT_SUBMIT_SPI=/screens/submit_spi.gif "border="0" class="button" alt="
+ICON_CANCEL_SPI=<img src="/screens/cancel_spi.gif" alt="Cancelar" class="button" />
+ICON_OK_SPI=<img src="/screens/ok_spi.gif" class="button" alt="OK" />
+ICON_PREVPAGE_SPI=<img src="/screens/prevscrn_spi.gif" class="button" alt="Previo" />
+ICON_SUBMIT_SPI=<img src="/screens/submit_spi.gif" alt="Enviar" class="button" />
+ICON_UPDATELIST_SPI=<img src="/screens/updatelist_spi.gif" alt="Actualizar lista" class="button" />
+ICON_CLEAR_ALL_SPI=<img src="/screens/clear_all_spi.gif" alt="Borrar todo"/>
+ICON_CLEAR_FORM_SPI=<img src="/screens/clear_form_icon_spi.gif" alt="Borrar formulario"/>
+ICON_DELETE_SELECTED_SPI=<img src="/screens/delete_selected_spi.gif" alt="Borrar seleccionado"/>
+ICON_SELECT_ALL_SPI=<img src="/screens/save_all_spi.gif" alt="Guardar todo"/>
+INSERTTAG_INHEAD_SPI=<script type="text/javascript" src="/screens/bibdisplay.js"></script>
+RESOURCETABLE_SPI=valign="top"|cellpadding="0" cellspacing="0"||En otra parte
+STARTOVER_SPI=/search*spi
+TOPLOGO_SPI=@screens/toplogo_spi.html
+XSTARTOVER_SPI=/*spi
+BUT_PUBLIC_SPI=/screens/public_spi.gif
+BUT_STAFF_SPI=/screens/staff_spi.gif
+STAFF_LOGGEDIN_MSG_SPI=<span class="loggedInMessage">Está conectado como "personal" en %s como %s</span>
+BUT_ANOTHER_SPI=/screens/another_spi.gif
+BUT_NEWSRCH_SPI=/screens/startover_spi.gif
+BUT_WORDSRCH_SPI=/screens/wordsrch_spi.gif
+BUT_MODIFY_SPI=/screens/modify_spi.gif "border="0" class="button" alt="
+BUT_SHOWSIM_SPI=/screens/showsim_spi.gif "border="0" class="button" alt="
+ICON_REL_GROUP_1_SPI=<img src="/screens/relevance5.gif" alt="Más relevantes">&nbsp;Más relevantes títulos&nbsp;
+ICON_REL_GROUP_2_SPI=<img src="/screens/relevance4.gif" alt="Altamente relevantes">&nbsp;Altamente relevantes títulos&nbsp;
+ICON_REL_GROUP_3_SPI=<img src="/screens/relevance3.gif" alt="Muy relevante">&nbsp;Muy relevante títulos&nbsp;
+ICON_REL_GROUP_4_SPI=<img src="/screens/relevance2.gif" alt="Relevante">&nbsp;Relevante títulos&nbsp;
+ICON_REL_GROUP_5_SPI=<img src="/screens/relevance1.gif" alt="Otra relevancia">&nbsp;Otra relevancia títulos&nbsp;
+# ICON_AWS_BYRELEVANCE_LINK_SPI=
+# ICON_AWS_BYDATE_LINK_SPI=
+# ICON_AWS_BYTITLE_LINK_SPI=
+RELSEARCH_SPI=searchtool||<img src="/screens/relsearch_spi.gif" class="button" alt="Ver Búsquedas relacionadas" />
+AUTHMSG_SPI=<em>%u</em> -- Véase %w <strong>%a</strong> <span class="authPublicNote">%p</span>|%u -- Véase además %w %a <span class="authPublicNote">%p</span>
+AUTHMSG_SR_SPI=ael encabezamiento siguiente|bel encabezamiento anterior|dla forma completa del encabezamiento|funa composición musical basada en esta obra|gel término específico|hel término genérico
+BROWSE_HEADERS_SPI=Marcar|Medios
+BUT_BRIEF_SPI=/screens/brief_spi.gif
+BUT_EXTENDED_SPI=/screens/extended_spi.gif
+BUT_LIMAVAIL_SPI=/screens/limavail_spi.gif
+BUT_LIMIT_SPI=/screens/limit_spi.gif
+BUT_UNLIMAVAIL_SPI=/screens/unlimavail_spi.gif
+# ICON_BOOKCART_SPI=<img src="/screens/bookcart_spi.gif" alt="Carro de libros" class="button" />
+ICON_BOOKCART_SAVED_SPI=<img src="/screens/bookcart_saved_spi.gif" alt="En el carro de libros" class="button" />
+ICON_FULLRECORD_SPI=<img src="/screens/viewfullrecord.gif" alt="Ver registro completo" class="button" /> Ver registro completo
+ICON_LOCATEINRESULTS_SPI=<img src="/screens/locateinresults_spi.gif" alt="Localizar en resultados" class="button" />
+ICON_PAGING_CAPTION_SPI=Página de resultados&nbsp;
+ICON_PAGING_NEXT_SPI=Sig
+ICON_PAGING_PREV_SPI=Ant
+# ICON_PROGRAM_SPI=<img src="/screens/program_spi.gif" alt="Eventos de la biblioteca">
+# ICON_RESOURCE_SPI=
+ICON_SAVEALLPAGE_SPI=<img src="/screens/saveallpage_spi.gif" alt="Guardar todo lo de la página" class="button" />
+ICON_SAVEMARKED_SPI=<img src="/screens/savemarked_spi.gif" alt="Guardar registros marcados" class="button" />
+NO_COPIES_SPI=No hay ejemplares disponibles en este momento
+SORT_BROWSE_SPI=t:Título|a:Autor|c:Año|r:Inverso Año|n:Signatura|m:Tipo de material
+BIB_TOC_HEADER_SPI=<strong>Tabla de contenidos</strong>
+BUT_MARC_DISPLAY_SPI=/screens/marc_display_spi.gif
+BUT_REGULAR_DISPLAY_SPI=/screens/regular_display_spi.gif
+BUT_RTRNTB_SPI=/screens/rtrntb_spi.gif
+ICON_BIB_HOLDINGS_ITEMS_SPI=Ver Copias
+# ICON_NEARBY_SPI=<img src="/screens/near_shelf_spi.gif" alt="Ejemplares cercanos en la estantería"/>
+ICON_BIB_PAGING_CAPTION_SPI=Página de resultados:
+ICON_BIB_PAGING_NEXT_SPI=<img src="/screens/bib_paging_next_spi.gif" class="button" alt="Registro siguiente" />
+ICON_BIB_PAGING_PREV_SPI=<img src="/screens/bib_paging_prev_spi.gif" class="button" alt="Registro anterior" />
+ICON_RECORDLINK_SPI=<div class="bibRecordLink"><img src="/screens/permlink.gif" alt=""/>&nbsp;<a id="recordnum" href="%s">Señalar enlace a este registro</a></div>
+LINK856TEXT_SPI=Conectar a
+BIB_LICENSE_FIELDS_SPI=Permitido:Vlw|Restringido:Vlx
+# BIB_LICENSE_FIELDS_BRIEF_SPI=
+BIB_RESOURCE_CAPTION_SPI=<strong>Este título está disponible electrónicamente a través de:</strong>
+BIB_RESOURCE_FIELDS_SPI=:VeT|:VeE|:Vek
+BIB_RESOURCE_FIELDS_BRIEF_SPI=:VcY|:Vch|:VeE
+BIB_RESOURCE_NUM_BRIEF_SPI=A
+ICON_BIB_RESOURCE_DETAILS_SPI=<img src="/screens/bib_resource_details_spi.gif" class="button" alt="Datos completos" />
+ICON_RESOURCE_RECORD_SPI=<img src="/screens/resource_record_spi.gif" class="button" alt="Sobre este recurso" />
+# ICON_VIEW_ADDITIONAL_ITEMS_SPI=<img src="/screens/view_additional_items_spi.gif" alt="Ver ejemplares adicionales" />
+RESOURCE_HOLDINGS_FIELDS_SPI=Título:VbT|Cobertura:Vch|Texto completo:VcY
+RESOURCE_LICENSE_FIELDS_SPI=Permitido:Vlw|Restringido:Vlx|Disponible para:Vlf|Notas de acceso:Vla
+BUT_CARDFORM_BOX_SPI=/screens/cardform_box_spi.gif
+BUT_CARDFORM_LIN_SPI=/screens/cardform_lin_spi.gif
+CHECKIN_STATUS_SPI=RECIBIDO=Aquí|EXPERADO=A punto de empezar|ENCUADERNACIÓN=En encuadernación|ATRASADO=Atrasado|Otros=Ver personal
+HOLDINGS_REQ_SPI=Entregarme el artículo
+MY_LISTS_SPI=true
+ICON_MYLISTS_SPI=<img src="/screens/my_lists_spi.gif" alt="Mis Listas" />
+ICON_MYLISTS_EXPORT_SPI=<img src="/screens/mylists_export_spi.gif" alt="Exportar Mis Listas" />
+ICON_MYLISTS_REQUEST_SPI=<img src="/screens/mylists_request_spi.gif" alt="Solicitar" />
+ICON_MYLISTS_REMOVE_DUPLICATES_SPI=<img src="/screens/mylist_remove_duplicates_spi.gif" alt="Eliminar los títulos en ya están en mi Historial de lectura" />
+ICON_MYLISTS_SAVE_SPI=<img src="/screens/mylists_save_spi.gif" alt="Guardar en Mis Listas" />
+ICON_MYLISTS_SAVE_TO_LIST_SPI=<img src="/screens/save_to_my_lists_spi.gif" alt="Guardar en Mis Listas"/>
+ICON_BACK_TO_MYLISTS_SPI=<img src="/screens/back_to_mylists_spi.gif" alt="Volver al listado" />
+BUT_BIBEXPORT_SPI=/screens/bibexport_spi.gif
+BUT_CLEAR_MARKED_SPI=/screens/clear_marked_spi.gif
+BUT_EXPORT_MULTI_SPI=/screens/export_multi_spi.gif
+BUT_EXPORT_VIEW_SAVES_SPI=/screens/export_view_saves_spi.gif
+BUT_VIEW_SAVES_SPI=/screens/view_saves_spi.gif
+BUT_REQUEST_SPI=/screens/request_spi.gif
+BUT_REQUEST_ALL_SPI=/screens/request_all_spi.gif
+BUT_REQUEST_MULTI_SPI=/screens/request_multi_spi.gif
+BUT_REQUEST_RESET_SPI=/screens/request_reset_spi.gif
+BUT_REQUEST_SELECTED_SPI=/screens/request_selected_spi.gif
+ICON_REQUEST_SPI=<img src="/screens/bullet.gif" alt="" style="margin-right:5px"/>Solicitud
+# REQFILLTIME_SPI=14|<br />Solicitud disponible en aproximadamente %d días|<br />Disponibilidad estimada actualmente: aproximadamente %d días|<br />Este material puede estar disponible inmediatamente
+REQUEST_SPI=Reservar este ejemplar|bib|ask|Y
+# REQUEST_INSTRUCTION_SPI=Indique las instruciones especiales, por favor: 
+REQUEST_MULTI_SPI=Solicitar todos los ejemplares en el carro|bib|ask
+BUT_PAT_CANCEL_SPI=/screens/cancel_spi.gif
+BUT_PAT_CANCELALL_SPI=" style="display: none"
+BUT_PAT_CANCELMARK_SPI=/screens/pat_cancelmark_spi.gif
+BUT_PAT_CHKOUTS_SPI=/screens/pat_chkouts_spi.gif
+BUT_PAT_FINES_SPI=/screens/pat_fines_spi.gif
+BUT_PAT_HOLDS_SPI=/screens/pat_holds_spi.gif
+BUT_PAT_INFO_SPI=/screens/pat_info_spi.gif
+BUT_PAT_MSGS_SPI=/screens/pat_msgs_spi.gif
+BUT_PAT_PIN_SPI=/screens/pat_pin_spi.gif
+BUT_PAT_RENEWALL_SPI=/screens/pat_renewall_spi.gif
+BUT_PAT_RENEWMARK_SPI=/screens/pat_renewmark_spi.gif
+BUT_PAT_SORTBYCHKOUT_SPI=/screens/pat_sortbychkout_spi.gif
+BUT_PAT_SORTBYDUE_SPI=/screens/pat_sortbydue_spi.gif
+BUT_PAT_SUBMIT_SPI=/screens/pat_submit_spi.gif
+BUT_PSTARTOVER_SPI=/screens/startover_spi.gif
+BUT_RET2PREC_SPI=/screens/ret2prec_spi.gif
+BUT_UPDATE_HOLDS_SPI=/screens/pat_psearch_update_spi.gif
+ICON_CLOSEWINDOW_SPI=<img src="/screens/closewindow_spi.gif" class="button" alt="Cerrar ventana" />
+# ICON_CONFIRM_YES=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Yes</span></span></div></div>
+# ICON_CONFIRM_NO=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">No</span></span></div></div>
+ICON_PAT_CANCELALL_SPI=<img src="/screens/pat_cancelall_spi.gif" class="button" alt="Cancelar Todo" />
+ICON_PAT_CANCELMARK_SPI=<img src="/screens/pat_cancelmark_spi.gif" class="button" alt="Cancelar Selección" />
+ICON_PIN_RESET_SPI=<img src="/screens/forgot_your_pin_spi.gif" alt="¿A olvidado su PIN?"/>
+ICON_SORTPUDATE_SPI=<img src="/screens/sortpudate_spi.gif" class="button" alt="Ordenar por recogida" />
+ICON_SORTREQDATE_SPI=<img src="/screens/sortreqdate_spi.gif" class="button" alt="Ordenar por solicitud" />
+NEWPIN_MSG_SPI=Indique un Número de Identificación Personal (PIN)
+PATRON_MSG_SPI=z|Mensaje de la biblioteca
+# PIN_RESET_EMAIL_SPI=Solicitud para cambiar su PIN de la biblioteca|nyplsierratest@nypl.org|nyplsierratest@nypl.org
+PSTARTOVER_SPI=/*spi
+# BUT_LOGOUT_SPI=/screens/logout_spi.gif "border="0" class="button" alt="
+BUT_PAT_PSEARCH_REMOVE_SPI=/screens/pat_psearch_remove_spi.gif
+BUT_PAT_PSEARCH_UPDATE_SPI=/screens/pat_psearch_update_spi.gif
+BUT_PAT_SEARCH_SPI=/screens/pat_search_spi.gif
+# BUT_PLOGOUT_SPI=/screens/ret2prec_spi.gif
+BUT_PAT_GETPSAVEDRECS_SPI=/screens/pat_getpsavedrecs_spi.gif
+CIRC_HIST_LIMIT_TEXT_SPI=Limitar a títulos que no están en mi historial de lectura
+ICON_PAT_DELETE_ALL_SPI=<img src="/screens/pat_delete_all_spi.gif" class="button" alt="Borrar todo" />
+ICON_PAT_DELETE_MARKED_SPI=<img src="/screens/pat_delete_marked_spi.gif" class="button" alt="Borrar marcado" />
+ICON_READING_HISTORY_SPI=<img src="/screens/reading_history_spi.gif" class="button" alt="Mi historial de lectura" />
+ICON_READING_HISTORY_OPTIN_SPI=<img src="/screens/reading_history_optin_spi.gif" class="button" alt="Opt In" />
+ICON_READING_HISTORY_OPTOUT_SPI=<img src="/screens/reading_history_optout_spi.gif" class="button" alt="Opt Out" />
+ICON_READING_HISTORY_EXPORT_SPI=<img src="/screens/export_readinglist_spi.gif" alt="Exportar Mi historial de lectura"/> 
+LOGGEDIN_MSG_SPI=<span class="loggedInMessage">Usted está conectado en %s como %s</span><br />
+PREFTEXT_SPI=Guardar como búsqueda preferida
+ICON_PATRATE_SPI=<img src="/screens/patrate_spi.gif" alt="Mis valoraciones" class="button" />
+ICON_RATE_GROUP_SPI=<img src="/screens/rate_group.gif" alt="Valorado %d comienza desde 5 basado en %n valoraciones" title="Valorado %d comienza desde 5 basado en %n valoraciones" />
+ICON_RATE_MY_SPI=<img src="/screens/rate_my.gif" alt="Ha valorado esto %d comienza desde 5" title="Ha valorado esto %d comienza desde 5" />
+ICON_RATE_NEED_SPI=<img src="/screens/rate_need.gif" alt="Valorar este material" title="Valorar este material" />
+ICON_RATE_NO_SPI=<img src="/screens/rate_no.gif" alt="Este material no ha sido valorado aún" title="Este material no ha sido valorado aún" />
+ICON_RATE_PAD_SPI=<img src="/screens/rate_pad.gif" alt="Valorado %d comienza desde 5 basado en %n valoraciones" title="Valorado %d comienza desde 5 basado en %n valoraciones" />
+CC_APPROVED_SPI=Su pago ha sido aprobado.
+CC_DECLINED_SPI=Lo siento. Su pago ha sido denegado. Confirme que la información se ha introducido correctamente o pague en la biblioteca.
+CC_EMAIL_RECEIPT_SPI=Recibo de pago a su biblioteca|nyplsierratest@nypl.org|nyplsierratest@nypl.org
+# DONATE_NOTIFY_SPI=Se ha recibido un donativo nuevo|circadm@example.org|donormgmt@example.org
+ICON_PAY_SPI=<img src="/screens/pay_spi.gif" class="button" alt="Pago en línea" />
+ICON_PAY_CLEAR_ALL_SPI=<img src="/screens/clear_all_spi.gif" class="button" alt="Borrar todo" />
+ICON_PAY_SELECT_ALL_SPI=<img src="/screens/select_all_spi.gif" class="button" alt="Seleccionar todo" />
+ICON_PRINT_SPI=<img src="/screens/print_spi.gif" class="button" alt="Imprimir" />
+# MINDONATE_SPI=1000|Los donativos deben ser de al menos 10.00 € para cubrir los costes de procesamiento. Gracias.
+PAYAMTS_SPI=101|Visite la biblioteca para pagar esta cantidad, por favor|00
+BOOKINGS_DAY_LEGEND_SPI=<span class="bookingsLegend">La biblioteca cierra en <span id="closed">X</span> horas. No hay ejemplares disponibles en <span id="unavailable">horas</span> en gris.</span>
+BOOKINGS_MONTH_LEGEND_SPI=<span class="bookingsLegend">La biblioteca cierra el <span id="closed">X</span> días. No hay ejemplares disponibles en <span id="unavailable">días</span> en gris.</span>
+# BUT_PAT_BOOKING_SPI=/screens/pat_booking_spi.gif "border="0" class="button" alt="
+ICON_BOOKINGS_HEADER_SPI=<span class="bibBookingsHeader">Guardar este material</span>
+ICON_DAILYCAL_SPI=Ver calendario diario
+ICON_HOURLYCAL_SPI=Ver calendario por horas
+ICON_NEXTCAL_SPI=Siguiente
+ICON_PREVCAL_SPI=Previo
+BUT_ILL_CANCEL_SPI=/screens/ill_cancel_spi.gif
+BUT_ILL_FORM_SPI=/screens/ill_form_spi.gif
+BUT_ILL_HOME_SPI=/screens/ill_home_spi.gif
+# BUT_PAT_ILL_SPI=/screens/pat_ill_spi.gif
+ILL_CONF_EMAIL_SUBJECT_SPI=Notificación para la biblioteca de solicitud de préstamo inter-bibiotecario
+BUT_RET2CRS_SPI=/screens/ret2crs_spi.gif "border="0" class="button" alt="
+# RSRV_HEADER_SPI=Materiales para este curso
+# RSRV_HEADER_SPI=Títulos destacados este mes
+BUT_PREVSCRN_SPI=/screens/prevscrn_spi.gif "border="0" class="button" alt="
+BUT_RET2FEAT_SPI=/screens/ret2feat_spi.gif "border="0" class="button" alt="
+# FEATURED_LIST_SPI=01,02,03|LISTADOS DESTACADOS|CATEGORÍA|Nº de títulos
+BIBIMAGE_TEXT_SPI=Cubierta del libro
+# BUT_ENCYCPD_SPI=/screens/encycpd_spi.gif
+BUT_FULL_TEXT_SPI=/screens/full_text_spi.gif
+BUT_CLOSEFRAME_SPI=/screens/closeframe_spi.gif
+BUT_RESOURCELINK_SPI=/screens/resourcelink_spi.gif
+BUT_RET2RESOURCE_SPI=/screens/ret2resource_spi.gif
+RESLINK_SPI=bibresourcetop|browseresourcetop||
+# WBHEADERTEXT_SPI=Los siguientes recursos le pueden proporcionar información adicional sobre<br />#ENCABEZAMIENTO#
+PATFEED_PROGRAM_SESSION_SOON_SPI=Uno de los eventos para los que se ha matriculado va a empezar pronto. Conéctese a Mi cuenta para conocer la fecha, hora y localización del evento.
+PATFEED_PROGRAM_SESSION_TOMORROW_SPI=Uno de los eventos para los que se ha matriculado es para mañana. Conéctese a Mi cuenta para conocer la fecha, hora y localización del evento.
+PATFEED_PROGRAM_SESSION_TODAY_SPI=Uno de los eventos para los que se ha matriculado es para hoy. Conéctese a Mi cuenta para conocer la fecha, hora y localización del evento.
+BUT_EMAIL_SPI=/screens/email_spi.gif
+BUT_NEXTREC_SPI=/screens/nextrec_spi.gif "border="0" class="button" alt="
+BUT_PREVREC_SPI=/screens/prevrec_spi.gif "border="0" class="button" alt="
+BUT_Z39_ANOTHER_SPI=/screens/z39_another_spi.gif "border="0" class="button" alt="
+BUT_Z39_REQUEST_SPI=/screens/request_spi.gif "border="0" class="button" alt="
+BUT_Z39SEARCH_SPI=/screens/z39search_spi.gif "border="0" class="button" alt="
+Z39BROADCAST_SPI=Búsqueda Z39.50:Selecciones los servidores en los que quiere realizar la consulta
+BUT_RETHOME_SPI=/screens/rethome_spi.gif "border="0" class="button" alt="
+# SELFREG_ERROR_EMAIL_SPI=nyplsierratest@nypl.org|nyplsierratest@nypl.org|Error de Auto-inscripción|nyplsierratest@nypl.org
+# SELFREG_INFO_EMAIL_SPI=nyplsierratest@nypl.org|nyplsierratest@nypl.org|Nueva inscripción de usuario|nyplsierratest@nypl.org
+ICON_MFFAVS_HOME_SPI=&nbsp; &nbsp; <img src="/screens/mffavs_home.gif" alt="Ir a Research Pro" />
+ICON_MFFAVS_SEARCH_SPI=<img src="/screens/mffavs_search_spi.gif" alt="Buscar en Research Pro" />
+ICON_PAT_MFFAVS_SPI=<img src="/screens/pat_mffavs_spi.gif" alt="Mi Research Pro" />
+MFFAVS_CONFIRM_SPI=Su grupo, %s, se ha guardado correctamente.
+MFFAVS_DENY_SPI=Función no disponible. Contacte con la biblioteca, por favor.
+# MFFAVS_HOME_SPI=http://researchpro-[CÓDIGOSITIO]:[PUERTO]/iii/mfrpro-[CÓDIGOSITIO]/loadSearchPage.do?searchtype=simple&searchpage=simple&accountid=[CUENTA]&accountpassword=[CUENTA]&language=eng
+# MFFAVS_URL_SPI=true|[CUENTA]|[CUENTA]|/mfgo/http://researchpro-[CÓDIGOSITIO]:[PUERTO]/iii/mfrpro-[CÓDIGOSITIO]/search.do
+ICON_SPELLCHECK_MORE_SPI=<span class="spellcheckToolMore">más&nbsp;&raquo;</span>
+ICON_SPELLCHECK_SEARCH_SPI=<img src="/screens/go_but_spi.gif" class="button" alt="Buscar">
+SPELLCHECK_SPI=<span class="spellcheckTool">¿Quiso decir %a? %s </span>
+MF_BOTLOGO_SPI=@screens/MFbotlogo_spi.html
+MF_EMAIL_SENDER_SPI=researchpro@iii.com
+MF_ICON_ADVANCED_SEARCH_SPI=<img src="/screens/advancedsearch_spi.gif" alt="Búsqueda avanzada" class="button" />
+MF_ICON_CLEAR_SPI=<img src="/screens/request_reset_spi.gif" alt="Borrar formulario" class="button" />
+MF_ICON_CLOSE_SPI=<img src="/screens/closewindow_spi.gif" alt="Cerrar ventana" class="mfButton" />
+MF_ICON_DESELECTALL_SPI=<img src="/screens/pay_clear_all_spi.gif" class="button" alt="Borrar todo" />
+MF_ICON_EMAIL_SPI=<img src="/screens/email_spi.gif" class="mfButton" alt="Email" title="email"/>
+MF_ICON_HELP_SPI=<img src="/screens/help_spi.gif" alt="Ayuda" class="button" />
+MF_ICON_LOGOFFACCOUNT_SPI=<img src="/screens/logout_spi.gif" alt="Salir" class="button" />
+MF_ICON_MFFAVS_GROUP_SPI=<img src="/screens/mf_mfavs_group_spi.gif" class="button" alt="Guardar grupo">
+MF_ICON_PATRON_REC_SPI=<img src="/screens/ret2prec_spi.gif" class="button" alt="Volver al registro del usuario" />
+MF_ICON_NEW_SEARCH_SPI=<img src="/screens/newsrch_spi.gif" class="button" alt="Búsqueda nueva" />
+MF_ICON_PRINT_SPI=<img src="/screens/print_spi.gif" class="button" alt="Imprimir" />
+MF_ICON_RET2CAT_SPI=<img src="/screens/ret2cat_spi.gif" class="button" alt="Volver al catálogo" />
+MF_ICON_SEARCH_SPI=<img src="/screens/search_research_pro_spi.gif" alt="Buscar en Research Pro" class="button"/>
+MF_ICON_SELECTALL_SPI=<img src="/screens/pay_select_all_spi.gif" class="button" alt="Seleccionar todo" />
+MF_ICON_SIMPLE_SEARCH_SPI=<img src="/screens/simplesearch_spi.gif" alt="Búsqueda simple" class="button" />
+MF_ICON_UPDATELIST_SPI=<img src="/screens/updatelist_spi.gif" alt="Actualizar lista" />
+MF_ICON_VIEWSAVED_SPI=<img src="/screens/view_saves_spi.gif" alt="Ver guardado" class="mfButton"/>
+MF_RESULTSVIEW_SPI=tabbed,Ver resultados, presentado por recurso|standard,Ver todos los recursos intercalados
+MF_RETURN_URL_SPI=http://researchpro-[CÓDIGOSITIO]:[PUERTO]/iii/mfrpro-[CÓDIGOSITIO]/loadSearchPage.do?searchtype=simple&searchpage=simple&accountid=[CUENTA]&accountpassword=[CUENTA]
+MF_SEARCHINDEX_SPI=Keywords,Palabras claves|:CREATOR,Autor|:TITLE,Título|:SUBJECT,Materia
+MF_STYLESHEET_SPI=/screens/styles_mf.css
+MF_TOPLOGO_SPI=@screens/MFtoplogo_spi.html
+PROXYDNS=catalog.nypl.org
+PROGRAM_SECTION_FIELDS_SPI=Fecha/hora:VsT|En:Vss|Localización:Fs285|Instructor:Vsn|Status:VsS
+# BUT_PAT_PROGRAMS_SPI=
+# BUT_PAT_SORTBYDATE_SPI=sortby_date_spi.gif "border="0" class="button" alt="
+BUT_PAT_SORTBYNAME_SPI=sortby_name_spi.gif
+# BUT_RET2PROG_SPI=
+ICON_REGISTER_SPI=<br><strong>Click para Inscribirse</strong>
+ICON_ADD_TO_WAITLIST_SPI=<br><strong>Añadir a lista de espera</strong>
+ICON_VIEW_ADDITIONAL_SESSIONS_SPI=<img src="/screens/view_additional_sessions_spi.gif" alt="Ver sesiones adicionales">
+ICON_HIDE_ADDITIONAL_SESSIONS_SPI=<img src="/screens/hide_additional_sessions_spi.gif" alt="Esconder sesiones adicionales">
+# ICON_PROGRAM_CAL_SPI=<img src="/screens/program_cal_spi.gif" alt="Calendario de eventos">
+
+RESOURCE_LICENSE_FIELDS=Permitted:Vlt|Permitted:Vlv|Available to:Vlu|Access notes:Vlf
+BUT_ANOTHER=" style="display: none"
+ICON_BUT_MODIFY=<img src="/screens/modify.gif" alt="Modify search" title="Modify search" />
+# BUT_MODIFY=" style="display: none"
+BUT_STARTOVER=" style="display: none"
+ICON_MYLISTS_RECORD=<img src="/screens/mylists_save.gif" alt="Save to My Lists" title="Save to My Lists" />
+# CHECKIN_STATUS=A=Arrived|B=Bound|C=Claimed|E=Expected|L=Late|M=Missing|N=Not Published|O=Out of print|P=Partially Received|R=Removed|S=Bindery Prep|T=Being bound|U=Unavailable|Other=See staff
+MY_WEBPAC=FALSE,3
+ECOM_LINK_DONATE_DONE=Thank you for your payment.
+ECOM_LINK_FINES_DONE=Thank you for your payment.
+LOC_maj*=http://www.nypl.org/about/locations/schwarzman/childrens-center-42nd-street
+LOC_maf*=http://www.nypl.org/locations/divisions/jewish-division
+LOC_map*=http://www.nypl.org/locations/divisions/map-division
+LOC_mao*=http://www.nypl.org/locations/divisions/manuscripts-division
+LOC_mai*=http://www.nypl.org/about/divisions/general-research-division/microforms
+LOC_mag*=http://www.nypl.org/locations/divisions/milstein
+LOC_maq*=http://www.nypl.org/locations/divisions/pforzheimer-collection-shelley-and-his-circle
+LOC_mar*=http://www.nypl.org/locations/divisions/rare-books-division
+LOC_mac*=http://www.nypl.org/locations/divisions/arents-collection
+LOC_mae*=http://www.nypl.org/locations/divisions/berg-collection-english-and-american-literature
+LOC_mas*=http://www.nypl.org/locations/divisions/wallach-division/photography-collection
+LOC_mau*=http://www.nypl.org/locations/divisions/wallach-division/spencer-collection
+LOC_mak*=http://www.nypl.org/locations/divisions/periodicals-room
+LOC_mal*=http://www.nypl.org/locations/divisions/general-research-division
+LOC_mab*=http://www.nypl.org/locations/divisions/art-architecture-collection
+LOC_rcf02=http://www.nypl.org/locations/lpa/theatre-film-and-tape-archive
+LOC_myt4*=http://www.nypl.org/about/locations/lpa/offsite
+# LOC_qcf02=http://www.nypl.org/locations/divisions/theatre-film-and-tape-archive
+LOC_rcm*=http://www.nypl.org/help/get-what-you-need/access-offsite-collections
+# LOC_qcm*=http://www.nypl.org/help/get-what-you-need/access-offsite-collections
+# LOC_qcs*=http://www.nypl.org/help/get-what-you-need/access-offsite-collections
+LOC_rcs*=http://www.nypl.org/help/get-what-you-need/access-offsite-collections
+ICON_856LINK=<img src="/screens/view_online_resource_blue.gif" alt="Online Resource" />
+PATRON_FIELDS=n/a|$pb|F/43
+IMAGE_MATTYPEb=/screens/media_bluray.jpg
+LOC_myd4*=http://www.nypl.org/about/locations/lpa/offsite
+LOC_myh4*=http://www.nypl.org/about/locations/lpa/offsite
+LOC_mym4*=http://www.nypl.org/about/locations/lpa/offsite
+# HOLD_MSG_SIMPLE=T
+RESTRICT_HOLD_LOC=mab,maf,mag,mai,mal,mala,malc,maln,malw,map,myr,slr,sc,mab82,maf82,mag82,mai82,mal82,malm2,map82,mas82,myd22,myd32,myd42,myh22,myh32,myh42,mym22,mym32,mym42,myt22,myt32,myt42,slr12,slr22,scff2,hp,hd,ca,ls,ed,xfill
+LOC_rcp*=http://www.nypl.org/help/get-what-you-need/access-offsite-collections
+# FOR Encore
+PATFEEDS_MT=10.146.200.15
+WEBLINKS_ENCORE=0
+LOC_rcc*=http://www.nypl.org/help/get-what-you-need/access-offsite-collections
+IPSSO_USEHTML=T
+HAS_ALTERNATE_ID=T
+LOC_scb*=http://www.nypl.org/locations/divisions/moving-image-and-recorded-sound-division
+LOC_scc*=http://www.nypl.org/locations/divisions/art-and-artifacts-division
+LOC_scd*=http://www.nypl.org/locations/divisions/manuscripts-archives-and-rare-books-division
+LOC_sce*=http://www.nypl.org/locations/divisions/photographs-and-prints-division
+LOC_myd1*=http://www.nypl.org/locations/divisions/jerome-robbins-dance-division
+LOC_myd2*=http://www.nypl.org/locations/divisions/jerome-robbins-dance-division
+LOC_myd3*=http://www.nypl.org/locations/divisions/jerome-robbins-dance-division
+LOC_myf*=http://www.nypl.org/locations/divisions/theatre-film-and-tape-archive
+LOC_myh1*=http://www.nypl.org/locations/divisions/rodgers-and-hammerstein-archives-recorded-sound
+LOC_myh2*=http://www.nypl.org/locations/divisions/rodgers-and-hammerstein-archives-recorded-sound
+LOC_myh3*=http://www.nypl.org/locations/divisions/rodgers-and-hammerstein-archives-recorded-sound
+LOC_mym1*=http://www.nypl.org/locations/divisions/music-division
+LOC_mym2*=http://www.nypl.org/locations/divisions/music-division
+LOC_mym3*=http://www.nypl.org/locations/divisions/music-division
+LOC_myt1*=http://www.nypl.org/locations/divisions/billy-rose-theatre-division
+LOC_myt2*=http://www.nypl.org/locations/divisions/billy-rose-theatre-division
+LOC_myt3*=http://www.nypl.org/locations/divisions/billy-rose-theatre-division
+LOC_myt4*=http://www.nypl.org/about/locations/lpa/offsite
+EXP_MSG=28|Your account expires in %n days on %d. To renew your account, please refer to our <a href="https://nypl.org/help/library-card/terms-conditions">"Cardholder Terms and Conditions</a>.
+LOC_cc*=http://www.nypl.org/about/locations/schwarzman/childrens-center-42nd-street
+LOC_qc*=http://www.nypl.org/locations/schwarzman
+LOC_ft*=https://www.nypl.org/locations/53rd-street
+PAT_SORTCHKOUT=0
+# BRIEF_b=q added by III for security reasons
+BRIEF_b=q
+# BRIEF_f=q added by III for security reasons
+BRIEF_f=q
+# BRIEF_n=q added by III for security reasons
+BRIEF_n=q
+# BRIEF_q=q added by III for security reasons
+BRIEF_q=q
+# BRIEF_v=q added by III for security reasons
+BRIEF_v=q
+# BRIEF_z=q added by III for security reasons
+BRIEF_z=q
+# ICON_BUT_MARC_DISPLAY=
+UPDATECIRC=true
+UPDATECIRC=TRUE
+UPDATECIRC=true

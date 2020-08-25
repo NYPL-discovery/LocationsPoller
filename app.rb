@@ -15,8 +15,10 @@ def handle_event(event:, context:)
 
   mappings = Net::HTTP.get(URI.parse(ENV['SIERRA_URL']))
     .scan(/(#\s*)?LOC_([^=]+)=([^\s]+)/)
-    .map {|(commented, code, url)| commented ? [/.\A/, ''] : [code, url]}
+    .map {|(commented, code, url)| commented ? [nil, nil] : [code, url]}
     .to_h
+
+  mappings.delete nil
 
   $logger.info("putting: ", mappings)
 
