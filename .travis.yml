@@ -44,11 +44,17 @@ deploy:
   runtime: ruby2.7
   module_name: app
   handler_name: handle_event
+  vpc:
+    subnet_ids:
+    - subnet-59bcdd03
+    - subnet-5deecd15
+    security_group_ids:
+    - sg-116eeb60
   environment:
   - LOG_LEVEL=debug
-  - S3_BUCKET='locations-mapping-production'
-  - S3_OBJECT='locations.json'
-  - SIERRA_URL='https://catalog.nypl.org/screens/wwwoptions'
+  - S3_BUCKET=locations-mapping-production
+  - S3_OBJECT=locations.json
+  - SIERRA_URL=https://catalog.nypl.org/screens/wwwoptions
   - SCHEDULE_EXPRESSION=rate(24 hours)
   skip_cleanup: true
   access_key_id: "$AWS_ACCESS_KEY_ID_PRODUCTION"
