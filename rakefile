@@ -50,9 +50,9 @@ task :cron do
       }
   end
   p 'using configuration: ', aws_configuration
-  if defined? configuration
-    events_client = Aws::CloudWatchEvents::Client.new(configuration)
-    lambda_client = Aws::Lambda::Client.new(configuration)
+  if defined? aws_configuration
+    events_client = Aws::CloudWatchEvents::Client.new(aws_configuration)
+    lambda_client = Aws::Lambda::Client.new(aws_configuration)
     deploy = yaml["deploy"].find {|conf| conf["function_name"].include? travis_branch.downcase}
     function_name = deploy["function_name"]
     p 'function_name: ', function_name, 'environment ', deploy["environment"]
