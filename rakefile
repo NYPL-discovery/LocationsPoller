@@ -53,7 +53,7 @@ task :cron do
   if defined? configuration
     events_client = Aws::CloudWatchEvents::Client.new(configuration)
     lambda_client = Aws::Lambda::Client.new(configuration)
-    deploy = YAML.safe_load(File.read('.travis.yml'))["deploy"].first
+    deploy = yaml["deploy"].find {|conf| conf["function_name"].include? travis_branch.downcase}
     function_name = deploy["function_name"]
     environment = deploy["environment"].map {|string| string.split("=") }.to_h
     if (function_name) && (schedule_expression = environment["SCHEDULE_EXPRESSION"])
