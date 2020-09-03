@@ -46,6 +46,12 @@ deploy:
   handler_name: handle_event
   event:
     schedule_expression: rate(24 hours)
+  vpc:
+    subnet_ids:
+    - subnet-59bcdd03
+    - subnet-5deecd15
+    security_group_ids:
+    - sg-116eeb60
   environment:
     variables:
       LOG_LEVEL: debug
