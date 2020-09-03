@@ -24,7 +24,7 @@ deploy:
   module_name: app
   handler_name: handle_event
   event:
-    SCHEDULE_EXPRESSION: rate(24 hours)
+    schedule_expression: rate(24 hours)
   environment:
     variables:
       LOG_LEVEL: debug
@@ -45,7 +45,7 @@ deploy:
   module_name: app
   handler_name: handle_event
   event:
-    SCHEDULE_EXPRESSION: rate(24 hours)
+    schedule_expression: rate(24 hours)
   environment:
     variables:
       LOG_LEVEL: debug

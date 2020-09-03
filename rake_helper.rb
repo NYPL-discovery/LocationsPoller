@@ -81,7 +81,7 @@ class RakeHelper
     @event = lambda_config["event"]
     if event["event_source_arn"]
       add_event_source
-    elsif event["SCHEDULE_EXPRESSION"]
+    elsif event["schedule_expression"]
       add_cron
     end
   end
@@ -103,7 +103,7 @@ class RakeHelper
   def add_cron
 
     ## create the event
-    events_client = Aws::CloudWatchEvents::Client.new(configuration)
+    events_client = Aws::CloudWatchEvents::Client.new(aws_configuration)
     schedule_expression = event["schedule_expression"]
     rule_name = "#{function_name}-rule"
     p 'rule_name: ', rule_name, 'schedule_expression: ', schedule_expression
