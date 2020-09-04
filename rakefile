@@ -1,4 +1,5 @@
 require 'yaml'
+require_relative 'rake_helper'
 # Basic utility commands to make working with SAM and AWS Lambda more friendly
 
 desc 'Run test suite'
@@ -96,38 +97,10 @@ task :lint do
     sh %( rubocop )
 end
 
-desc "set environment variables, vpc configuration, and cron job"
+
+desc "Update lambda layers, environment_variables, vpc, and events"
 task :set_config do
-  require 'aws-sdk-lambda'
-  require 'yaml'
-  travis_branch = ENV["TRAVIS_BRANCH"].upcase
-  p 'TRAVIS_BRANCH: ', travis_branch
-  aws_access_key_id = ENV["AWS_ACCESS_KEY_ID_#{travis_branch}"]
-  aws_secret_access_key = ENV["AWS_SECRET_ACCESS_KEY_#{travis_branch}"]
-  if aws_access_key_id && aws_secret_access_key
-      aws_configuration = {
-        region: 'us-east-1',
-        access_key_id: aws_access_key_id,
-        secret_access_key: aws_secret_access_key
-      }
-  end
-  p 'using configuration: ', aws_configuration
-  if defined? aws_configuration
-    lambda_client = Aws::Lambda::Client.new(aws_configuration)
-    yaml = YAML.safe_load(File.read('.travis.yml'))
-    lambda_config = yaml["deploy"].find {|conf| conf["function_name"].include? travis_branch.downcase}
-    function_name = lambda_config["function_name"]
-    event = lambda_config["event"]
-    vpc_config = lambda_config["vpc"]
-    environment_variables = lambda_config["environment"].map {|str| str.split "="}.to_h
-    updated_lambda_configuration = {
-        function_name: function_name,
-        environment: { variables: environment_variables },
-        vpc_config: vpc_config
-    }
-    p 'update_function_configuration with: ', updated_lambda_configuration
-    update_configuration_resp = lambda_client.update_function_configuration(updated_lambda_configuration)
-    p 'update_configuration_resp: ', update_configuration_resp
-    Rake::Task["cron"].invoke
-  end
+  rake_helper = RakeHelper.new
+  rake_helper.update_lambda_configuration
+  rake_helper.update_event
 end
