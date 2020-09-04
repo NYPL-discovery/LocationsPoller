@@ -23,22 +23,48 @@ deploy:
   runtime: ruby2.7
   module_name: app
   handler_name: handle_event
+  event:
+    schedule_expression: rate(24 hours)
   environment:
-  - LOG_LEVEL=debug
-  - S3_BUCKET='locations-mapping'
-  - S3_OBJECT='locations.json'
-  - SIERRA_URL='https://catalog.nypl.org/screens/wwwoptions'
-  - RULE_NAME=LocationsPoller-qa-rule
-  - SCHEDULE_EXPRESSION=rate(24 hours)
-  - TARGET_ID=LocationsPoller-qa-lambda
+    variables:
+      LOG_LEVEL: debug
+      S3_BUCKET: locations-mapping
+      S3_OBJECT: locations.json
+      SIERRA_URL: https://catalog.nypl.org/screens/wwwoptions
   skip_cleanup: true
   access_key_id: "$AWS_ACCESS_KEY_ID_QA"
   secret_access_key: "$AWS_SECRET_ACCESS_KEY_QA"
   on:
     branch: qa
+- provider: lambda
+  function_name: LocationsPoller-production
+  description: Polls Sierra for locations codes -> url mappings and stores in s3
+  region: us-east-1
+  role: arn:aws:iam::946183545209:role/lambda-full-access
+  runtime: ruby2.7
+  module_name: app
+  handler_name: handle_event
+  event:
+    schedule_expression: rate(24 hours)
+  vpc:
+    subnet_ids:
+    - subnet-59bcdd03
+    - subnet-5deecd15
+    security_group_ids:
+    - sg-116eeb60
+  environment:
+    variables:
+      LOG_LEVEL: debug
+      S3_BUCKET: locations-mapping
+      S3_OBJECT: locations.json
+      SIERRA_URL: https://catalog.nypl.org/screens/wwwoptions
+  skip_cleanup: true
+  access_key_id: "$AWS_ACCESS_KEY_ID_PRODUCTION"
+  secret_access_key: "$AWS_SECRET_ACCESS_KEY_PRODUCTION"
+  on:
+    branch: production
 after_deploy:
-- rake set_current_env_vars
-- rake cron
+  - rake set_config
 env:
   global:
   - secure: UpzEUyFjRtmzMKFMQC8q0r/e8b+mLBRTKsufyQ8feLoPF8e3RTGmPMfIVv4Fbkpd+AMq98QqhyAEPX70NmHAnKOTGzkAyB1Pgg5XJtcgrLYrPcv5XLD8PjnoQvK+G9qOaeyvv/jehtHdGE/w/oNe+lmkfC1dpyYfSKas0k5dSdVREX+czyt52yLyV7tQlVfc67m8G2RbpGW8rRmH/qCuSj6Xfw8agasW/Qg3mA83HEISO+6t+TL2PCpdy/vdGzVJTk/HiQaf4PNvcWaD6hmZocI+SxyOPmvNJ4gvkIRcIrXJcMJdUul2Spd3oHETzGkXQSDhnEMSQSdrNxWnYljfj5OmbXDuZC/TSZc7YB2FkZxAoZL+0Z8bjrhIrrO2+/jL3dGxwvEL/YQV8Debdj9EFRwnfUIc4fmnMvADBhJ+2ZFhSFTIBpuTkgAHcbad/j0yGVBsGQqSfqV0Sj27I0x3Cyk7r09mG0QdPHQb3Wya75lQE4PZYmwQgklZR4iKEbl+7aq7MzCuuaSLEfCiDqnP/xZx/JHRQvV+DQfQsqVei57BIkkUVUwZVPBjb2l5oJa7cpbu7Wh2cVpsCJ+Z7dknDlsoIPC4f/2PXnpMHr8prO49unHCIlFH/bqfHp4+WlYR91XmsKeM+cFpuaTdUQmn+ot8BAG/zwxImkZCC/zThvA=
