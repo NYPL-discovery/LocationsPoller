@@ -31,3 +31,4 @@ This repo follows a [PRS-Target-Master Git Workflow](https://github.com/NYPL/eng
 CI/CD is configured in `.travis.yml` for the following branches:
 
 - `qa`
+- `production`
