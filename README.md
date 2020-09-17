@@ -1,5 +1,7 @@
 # Locations Poller
 
+[![Build Status](https://travis-ci.com/NYPL-discovery/LocationsPoller.svg?branch=master)](https://travis-ci.com/NYPL-discovery/LocationsPoller) [![GitHub version](https://badge.fury.io/gh/nypl-discovery%2FLocationsPoller.svg)](https://badge.fury.io/gh/nypl-discovery%2FLocationsPoller)
+
 ## Purpose
 
 Regularly queries Sierra for mapping of location codes to urls, and stores this mapping in S3
