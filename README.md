@@ -1,3 +1,7 @@
+# Deprecated
+
+> This repo is deprecated because it relies on Webpac, which is no longer available. Should we find a new source for location URLs, that scraping logic may ought to be sited in the [locations-service](https://github.com/NYPL/locations-service)
+
 # Locations Poller
 
 [![Build Status](https://travis-ci.com/NYPL-discovery/LocationsPoller.svg?branch=master)](https://travis-ci.com/NYPL-discovery/LocationsPoller) [![GitHub version](https://badge.fury.io/gh/nypl-discovery%2FLocationsPoller.svg)](https://badge.fury.io/gh/nypl-discovery%2FLocationsPoller)
