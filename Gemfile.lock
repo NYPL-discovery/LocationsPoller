@@ -35,7 +35,7 @@ GEM
       safe_yaml (~> 1.0.0)
     diff-lcs (1.4.4)
     hashdiff (1.0.1)
-    jmespath (1.4.0)
+    jmespath (1.6.1)
     method_source (1.0.0)
     multi_json (1.15.0)
     nypl_log_formatter (0.1.3)
